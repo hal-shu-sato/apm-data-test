@@ -1,0 +1,38 @@
+name: Check Update
+
+on:
+  schedule:
+    - cron: '43 20 * * *'
+  workflow_dispatch:
+
+jobs:
+  check:
+    name: Check Update
+    runs-on: ubuntu-latest
+    env:
+      TZ: 'Asia/Tokyo'
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: yarn
+      - run: yarn install --frozen-lockfile
+      - run: mr_ojii_file=`curl -s 'https://api.github.com/repos/Mr-Ojii/L-SMASH-Works-Auto-Builds/releases/latest' | jq -r '.assets[] | select(.name|test("Mr-Ojii_Mr-Ojii")).name'` && echo "mr_ojii_file=$mr_ojii_file" >> $GITHUB_ENV
+      - run: sed -i "s/L-SMASH-Works_rev[0-9]*_Mr-Ojii_Mr-Ojii_AviUtl\.zip/${{ env.mr_ojii_file }}/g" v2/data/packages.xml
+      - run: sudo chown -R runner /home/runner/work/apm-data/apm-data/node_modules/7zip-bin
+      - run: yarn run check-update
+      - run: yarn run convert-2-3
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          commit-message: Update packages data
+          branch: create-pull-request/check-update
+          delete-branch: true
+          title: '[Update] Update packages data'
+          body: |
+            Update some packages data
+          labels: enhancement
+          assignees: hal-shu-sato
+          reviewers: hal-shu-sato

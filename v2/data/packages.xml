@@ -1,0 +1,3364 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="../schema/packages.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<packages version="2">
+	<!-- amate ID:amate -->
+
+	<package>
+		<id>amate/InputPipePlugin</id>
+		<name>InputPipePlugin</name>
+		<overview>AviUtlのメモリ使用量を減らす</overview>
+		<description
+		>このソフトは、L-SMASH_Works File Reader(lwinput.aui)を別プロセスで実行してあげることによって、Aviutlのメモリ使用量削減を目論む、aviutlの入力プラグインです</description>
+		<developer>amate</developer>
+		<dependencies>
+			<dependency
+			>MrOjii/LSMASHWorks|pop4bit/LSMASHWorks|VFRmaniac/LSMASHWorks|HolyWu/LSMASHWorks</dependency>
+		</dependencies>
+		<pageURL>https://www.nicovideo.jp/watch/sm35585310</pageURL>
+		<downloadURL
+		>https://github.com/amate/InputPipePlugin/releases/latest</downloadURL>
+		<latestVersion>v1.8</latestVersion>
+		<files>
+			<file archivePath="InputPipePlugin/">plugins/InputPipeMain.exe</file>
+			<file archivePath="InputPipePlugin/">plugins/InputPipePlugin.aui</file>
+			<file optional="true">plugins/InputPipePlugin.log</file>
+		</files>
+		<releases>
+			<release version="v1.8">
+				<integrities>
+					<integrity
+						target="plugins/InputPipePlugin.aui"
+					>sha384-ujWRvgLYdr/2XKYMuzfkHSttfgJPXtXsH+StEkpPXj6cXTlJy2F3tha0sr0/lD14</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>amate/MFVideoReader</id>
+		<name>MFVideoReader</name>
+		<overview>Media Foundationを使った入力プラグイン</overview>
+		<description
+		>ファイルの入力、分離、デコードに、Media Foundation を使っており、DXVA2(GPU)を利用した高速なデコードが可能です</description>
+		<developer>amate</developer>
+		<pageURL>https://github.com/amate/MFVideoReader</pageURL>
+		<downloadURL
+		>https://github.com/amate/MFVideoReader/releases/latest</downloadURL>
+		<latestVersion>v1.0</latestVersion>
+		<files>
+			<file archivePath="MFVideoReader/">plugins/MFVideoReader.exe</file>
+			<file archivePath="MFVideoReader/">plugins/MFVideoReaderPlugin.aui</file>
+		</files>
+	</package>
+
+	<package>
+		<id>amate/PropertyWindowFixerPlugin</id>
+		<name>設定ダイアログ画面サイズ固定化プラグイン</name>
+		<overview>拡張編集設定ダイアログのウインドウサイズを固定化する</overview>
+		<description
+		>このプラグインは、拡張編集の設定ダイアログのウィンドウサイズが長くなったり短くなったりするのを阻止し、常に同じウィンドウサイズに固定化するプラグインである</description>
+		<developer>amate</developer>
+		<pageURL>https://www.nicovideo.jp/watch/sm36085428</pageURL>
+		<downloadURL
+		>https://github.com/amate/PropertyWindowFixerPlugin/releases/latest</downloadURL>
+		<latestVersion>v2.6</latestVersion>
+		<files>
+			<file
+				archivePath="PropertyWindowFixerPlugin/"
+			>plugins/PropertyWindowFixerPlugin.auf</file>
+			<file
+				archivePath="PropertyWindowFixerPlugin/"
+			>plugins/PropertyWindowFixerPluginConfig.ini</file>
+		</files>
+	</package>
+
+	<!-- aoytsk ID:aoytsk -->
+
+	<package>
+		<id>aoytsk/adjustaudio</id>
+		<name>音声の位置微調整</name>
+		<overview>1フレーム以下のより細かい精度で音ズレを修正</overview>
+		<description
+		>音声の位置微調整は1フレーム以下のより細かい精度(周波数単位)で音ズレを修正できるプラグインです。</description>
+		<developer>aoytsk</developer>
+		<pageURL>https://aoytsk.blog.jp/aviutl/2092140.html</pageURL>
+		<downloadURL>https://aoytsk.blog.jp/aviutl/2092140.html</downloadURL>
+		<latestVersion>Ver 0.1</latestVersion>
+		<files>
+			<file>plugins/adjustaudio.auf</file>
+			<file>plugins/adjustaudioex.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>aoytsk/dummy</id>
+		<name>ダミーファイル入力</name>
+		<overview>指定した設定で空の動画を読み込む</overview>
+		<description
+		>「ダミーファイル入力」はテキストファイルで指定した設定で空の動画を読み込む入力プラグインです。</description>
+		<developer>aoytsk</developer>
+		<pageURL>https://aoytsk.blog.jp/aviutl/1559137.html</pageURL>
+		<downloadURL>https://aoytsk.blog.jp/aviutl/1559137.html</downloadURL>
+		<latestVersion>Ver 0.1</latestVersion>
+		<files>
+			<file>plugins/dummy.aui</file>
+		</files>
+	</package>
+
+	<package>
+		<id>aoytsk/misc</id>
+		<name>小物詰め合わせ</name>
+		<overview>小物プラグイン色々</overview>
+		<description
+		>小物プラグイン色々。「音声プレビュー」「黒塗り」「編集＋」「タイムライン拡大率」「メモ」「ポイントミュート」「選択範囲編集」「タイムスタンプ合わせ」</description>
+		<developer>aoytsk</developer>
+		<pageURL>https://aoytsk.blog.jp/aviutl/1607088.html</pageURL>
+		<downloadURL>https://aoytsk.blog.jp/aviutl/1607088.html</downloadURL>
+		<latestVersion>Ver 0.1</latestVersion>
+		<files>
+			<file>plugins/audiopreview.auf</file>
+			<file>plugins/blacken.auf</file>
+			<file>plugins/editx.auf</file>
+			<file>plugins/exlayerjump.auf</file>
+			<file>plugins/exlayerswitch.auf</file>
+			<file>plugins/exscale.auf</file>
+			<file>plugins/exsceneswitch.auf</file>
+			<file>plugins/memo.auf</file>
+			<file>plugins/pointmute.auf</file>
+			<file>plugins/selector.auf</file>
+			<file>plugins/timestamp.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>aoytsk/rec</id>
+		<name>簡易録音</name>
+		<overview>Aviutlで録音をするプラグイン</overview>
+		<description
+		>簡易録音はAviutlで録音をするプラグインです。プレビューを再生しながら録音したり、拡張編集のタイムラインに自動で追加することができます。</description>
+		<developer>aoytsk</developer>
+		<pageURL>https://aoytsk.blog.jp/aviutl/1677824.html</pageURL>
+		<downloadURL>https://aoytsk.blog.jp/aviutl/1677824.html</downloadURL>
+		<latestVersion>Ver 0.2</latestVersion>
+		<files>
+			<file>plugins/rec.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>aoytsk/recovery</id>
+		<name>リカバリ</name>
+		<overview>AviUtlが落ちた時の編集状態を復元し、再起動する</overview>
+		<description
+		>「リカバリ」はAviUtlが落ちた時の編集状態を復元し、再起動するプラグインです。</description>
+		<developer>aoytsk</developer>
+		<pageURL>https://aoytsk.blog.jp/aviutl/34739355.html</pageURL>
+		<downloadURL>https://aoytsk.blog.jp/aviutl/34739355.html</downloadURL>
+		<latestVersion>Ver 0.1.0</latestVersion>
+		<files>
+			<file>plugins/recovery.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>aoytsk/autoloader</id>
+		<name>オートローダー</name>
+		<overview>ファイルを開いたときに追加で他のファイルを読み込みます</overview>
+		<description
+		>オートローダーはAviutlでファイルを開いたときに追加で他のファイルを読み込んだり他のプラグインにファイルを渡す機能を追加します。</description>
+		<developer>aoytsk</developer>
+		<pageURL>https://aoytsk.blog.jp/aviutl/1578022.html</pageURL>
+		<downloadURL>https://aoytsk.blog.jp/aviutl/1578022.html</downloadURL>
+		<latestVersion>Ver 0.1</latestVersion>
+		<files>
+			<file>plugins/autoloader.auf</file>
+			<file optional="true">plugins/autoloader.ini</file>
+		</files>
+	</package>
+
+	<package>
+		<id>aoytsk/cmpwnd</id>
+		<name>比較ウィンドウ</name>
+		<overview>２つの動画を比較するためのプラグイン</overview>
+		<description
+		>比較ウィンドウ は２つの動画を比較するためのプラグインです。プラグインのコピーで複数の動画を比較することもできます。エンコード設定や参考動画の比較に役立ちます。</description>
+		<developer>aoytsk</developer>
+		<pageURL>https://aoytsk.blog.jp/aviutl/1490264.html</pageURL>
+		<downloadURL>https://aoytsk.blog.jp/aviutl/1490264.html</downloadURL>
+		<latestVersion>Ver 0.1</latestVersion>
+		<files>
+			<file>plugins/cmpwnd.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>aoytsk/dbgwnd</id>
+		<name>デバッグウィンドウ</name>
+		<overview>Aviutlの構造体やメッセージなどの情報を表示</overview>
+		<description
+		>「デバッグウィンドウ」はAviutlの構造体やメッセージなどの情報を表示するプラグインです。OutputDebugStringに対応しているのでスクリプトのデバッグ出力も表示できます。</description>
+		<developer>aoytsk</developer>
+		<pageURL>https://aoytsk.blog.jp/aviutl/1545310.html</pageURL>
+		<downloadURL>https://aoytsk.blog.jp/aviutl/1545310.html</downloadURL>
+		<latestVersion>Ver 0.1</latestVersion>
+		<files>
+			<file>plugins/dbgwnd.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>aoytsk/easymp4</id>
+		<name>かんたんMP4出力</name>
+		<overview>セットアップ不要、プラグイン一つで簡単にエンコード</overview>
+		<description
+		>セットアップ不要、プラグイン一つで簡単にエンコードできます。</description>
+		<developer>aoytsk</developer>
+		<pageURL>https://aoytsk.blog.jp/aviutl/34586383.html</pageURL>
+		<downloadURL>https://aoytsk.blog.jp/aviutl/34586383.html</downloadURL>
+		<directURL>https://aoytsk.blog.jp/aviutl/easymp4v0.1.1.zip</directURL>
+		<latestVersion>v0.1.1</latestVersion>
+		<files>
+			<file>plugins/easymp4.auo</file>
+		</files>
+		<releases>
+			<release version="v0.1.0">
+				<integrities>
+					<integrity
+						target="plugins/easymp4.auo"
+					>sha384-9d9tQl1Xd9UpLtE7Y69+kYsH5SF7l4d3rNTG+O3NxrPMV/w73wOv1NsxKTULKKJo</integrity>
+				</integrities>
+			</release>
+			<release version="v0.1.1">
+				<archiveIntegrity
+				>sha384-GTJj01R8s/hVG98mFN3GTAYH4iRkOq3/5jwhcxpk4OG3tG7G7o2fC1bfyKljs6Jx</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="plugins/easymp4.auo"
+					>sha384-KqP7FgXutVgItDDzUI7iGiqR/scffirppUcToFdU5MAB2QCKYTda7suNNzaiuwB5</integrity>
+				</integrities>
+			</release>
+			<release version="v0.1.1(仮修正)">
+				<integrities>
+					<integrity
+						target="plugins/easymp4.auo"
+					>sha384-q1ur+XoS/QRVeHkCINN7EKyBB1KY/uYKN869NWq3jf+GuKm/tKpiWOHjWPMYbDFM</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>aoytsk/exeditbutton</id>
+		<name>拡張編集が...消えた?</name>
+		<overview>拡張編集の表示を切り替えるメニューを追加</overview>
+		<description
+		>拡張編集のウィンドウが消えてももう大丈夫。メニューから素早く表示できます。・メインウィンドウに拡張編集を表示を切り替えるメニューを追加・画面外に消えた拡張編集ウィンドウを起動時に画面内に移動させる。(既に本体で実装されている模様)</description>
+		<developer>aoytsk</developer>
+		<pageURL>https://aoytsk.blog.jp/Aviutl/891011.html</pageURL>
+		<downloadURL>https://aoytsk.blog.jp/Aviutl/891011.html</downloadURL>
+		<latestVersion>Ver 1.0</latestVersion>
+		<files>
+			<file>plugins/exeditbutton.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>aoytsk/extext</id>
+		<name>字幕アシスト</name>
+		<overview>エディタやブラウザなどから、文章を直接タイムラインに追加</overview>
+		<description
+		>字幕アシストはエディタやブラウザなどから、選択した文章を直接タイムラインに追加できるプラグインです。</description>
+		<developer>aoytsk</developer>
+		<pageURL>https://aoytsk.blog.jp/aviutl/1412254.html</pageURL>
+		<downloadURL>https://aoytsk.blog.jp/aviutl/1412254.html</downloadURL>
+		<latestVersion>Ver 0.1</latestVersion>
+		<files>
+			<file>plugins/extext.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>aoytsk/extoolbar</id>
+		<name>拡張ツールバー</name>
+		<overview>Aviutlに拡張編集用ツールバーを追加</overview>
+		<description
+		>拡張ツールバーはAviutlに拡張編集用ツールバーを追加するプラグインです。ツールバーのアイコンは自分で書き換えることもできます。</description>
+		<developer>aoytsk</developer>
+		<dependencies>
+			<dependency>exedit0.92</dependency>
+		</dependencies>
+		<pageURL>https://aoytsk.blog.jp/aviutl/422768.html</pageURL>
+		<downloadURL>https://aoytsk.blog.jp/aviutl/422768.html</downloadURL>
+		<latestVersion>Ver 0.3.5</latestVersion>
+		<files>
+			<file>plugins/extoolbar.auf</file>
+			<file optional="true">plugins/extoolbar.ini</file>
+			<file optional="true" directory="true">plugins/extoolbar/</file>
+		</files>
+	</package>
+
+	<package>
+		<id>aoytsk/inputprofile</id>
+		<name>入力優先度変更 β</name>
+		<overview>入力プラグインの優先度をプロファイルに記録する</overview>
+		<description
+		>「入力優先度変更」は、入力プラグインの優先度をプロファイルに記録することで切り替えを容易にするAviutlプラグインです。</description>
+		<developer>aoytsk</developer>
+		<pageURL>https://aoytsk.blog.jp/Aviutl/711549.html</pageURL>
+		<downloadURL>https://aoytsk.blog.jp/Aviutl/711549.html</downloadURL>
+		<latestVersion>Ver 0.2b</latestVersion>
+		<files>
+			<file>plugins/inputprofile.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>aoytsk/jumpbarx</id>
+		<name>ジャンプバー＋</name>
+		<overview>様々なジャンプ機能を提供するAviutlプラグイン</overview>
+		<description
+		>ジャンプバー＋ は様々なジャンプ機能を提供するAviutlプラグインです。フレーム・秒単位の相対位置ジャンプや、編集点・プロファイル変更位置へのジャンプ、マークやコピーしながらのジャンプなどが可能です。</description>
+		<developer>aoytsk</developer>
+		<pageURL>https://aoytsk.blog.jp/Aviutl/719123.html</pageURL>
+		<downloadURL>https://aoytsk.blog.jp/Aviutl/719123.html</downloadURL>
+		<latestVersion>Ver 0.4.1</latestVersion>
+		<files>
+			<file>plugins/jumpbarx.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>aoytsk/jumpdlg</id>
+		<name>ジャンプダイアログ（通常版）</name>
+		<overview>指定した位置に簡単にジャンプできるダイアログを追加する</overview>
+		<description
+		>ジャンプダイアログはAviutlに指定した位置に簡単にジャンプできるダイアログを追加するプラグインです。10ヶ所まで登録できる通常版と、32ヶ所まで登録できる 増量版があります。</description>
+		<developer>aoytsk</developer>
+		<pageURL>https://aoytsk.blog.jp/aviutl/445066.html</pageURL>
+		<downloadURL>https://aoytsk.blog.jp/aviutl/445066.html</downloadURL>
+		<latestVersion>Ver 0.4</latestVersion>
+		<files>
+			<file>plugins/jumpdlg.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>aoytsk/jumpdlg32</id>
+		<name>ジャンプダイアログ（増量版）</name>
+		<overview>指定した位置に簡単にジャンプできるダイアログを追加する</overview>
+		<description
+		>ジャンプダイアログはAviutlに指定した位置に簡単にジャンプできるダイアログを追加するプラグインです。10ヶ所まで登録できる通常版と、32ヶ所まで登録できる 増量版があります。</description>
+		<developer>aoytsk</developer>
+		<pageURL>https://aoytsk.blog.jp/aviutl/445066.html</pageURL>
+		<downloadURL>https://aoytsk.blog.jp/aviutl/445066.html</downloadURL>
+		<latestVersion>Ver 0.4</latestVersion>
+		<files>
+			<file>plugins/jumpdlg32.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>aoytsk/pluginlist</id>
+		<name>プラグインリスト</name>
+		<overview>プラグインとスクリプトの一覧をファイルに保存</overview>
+		<description
+		>プラグインリストはプラグインとスクリプトの一覧を、エクセルなどで閲覧できるtsvファイルに保存するプラグインです。</description>
+		<developer>aoytsk</developer>
+		<pageURL>https://aoytsk.blog.jp/aviutl/1592487.html</pageURL>
+		<downloadURL>https://aoytsk.blog.jp/aviutl/1592487.html</downloadURL>
+		<latestVersion>Ver 0.1</latestVersion>
+		<files>
+			<file>plugins/pluginlist.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>aoytsk/quickopen</id>
+		<name>クイックオープン</name>
+		<overview>出力後の動画ファイルを素早く開く</overview>
+		<description
+		>クイックオープンは編集中、出力後の動画ファイルを素早く開くためのプラグインです。</description>
+		<developer>aoytsk</developer>
+		<pageURL>https://aoytsk.blog.jp/aviutl/1347719.html</pageURL>
+		<downloadURL>https://aoytsk.blog.jp/aviutl/1347719.html</downloadURL>
+		<latestVersion>Ver 0.1</latestVersion>
+		<files>
+			<file>plugins/quickopen.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>aoytsk/seekbarx</id>
+		<name>シークバー＋</name>
+		<overview>シークバーにサムネイルを表示する</overview>
+		<description
+		>Youtubeのようなサムネイルをシークバーに追加するAviutlプラグインです。</description>
+		<developer>aoytsk</developer>
+		<pageURL>https://aoytsk.blog.jp/aviutl/613302.html</pageURL>
+		<downloadURL>https://aoytsk.blog.jp/aviutl/613302.html</downloadURL>
+		<latestVersion>Ver 0.3.1</latestVersion>
+		<files>
+			<file>plugins/seekbarx.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>aoytsk/statbarx</id>
+		<name>ステータスバー＋</name>
+		<overview>編集情報を一覧できるステータスバーをAviUtlに追加</overview>
+		<description
+		>ステータスバー＋は編集情報を一覧できるステータスバーをAviUtlに追加するプラグインです。</description>
+		<developer>aoytsk</developer>
+		<pageURL>https://aoytsk.blog.jp/aviutl/435251.html</pageURL>
+		<downloadURL>https://aoytsk.blog.jp/aviutl/435251.html</downloadURL>
+		<latestVersion>Ver 0.5.0</latestVersion>
+		<files>
+			<file>plugins/statbarx.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>aoytsk/trayiconx</id>
+		<name>トレイアイコン＋</name>
+		<overview>Aviutl を通知領域(タスクトレイ)に格納する</overview>
+		<description
+		>トレイアイコン＋はAviutl を通知領域(タスクトレイ)に格納したり、進捗情報の表示や一時停止機能を追加する Aviutlプラグインです。</description>
+		<developer>aoytsk</developer>
+		<pageURL>https://aoytsk.blog.jp/aviutl/450565.html</pageURL>
+		<downloadURL>https://aoytsk.blog.jp/aviutl/450565.html</downloadURL>
+		<latestVersion>Ver 0.4</latestVersion>
+		<files>
+			<file>plugins/trayiconx.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>aoytsk/wndman</id>
+		<name>ウィンドウマネージャー</name>
+		<overview>ウィンドウの配置を記録して切り替える機能などを追加</overview>
+		<description
+		>ウィンドウマネージャーはAviUtlのウィンドウの配置を記録して切り替えたり、消えたウィンドウを表示させる機能などを追加するウィンドウ管理プラグインです。</description>
+		<developer>aoytsk</developer>
+		<pageURL>https://aoytsk.blog.jp/aviutl/1470428.html</pageURL>
+		<downloadURL>https://aoytsk.blog.jp/aviutl/1470428.html</downloadURL>
+		<latestVersion>Ver 0.4.0</latestVersion>
+		<files>
+			<file>plugins/wndman.auf</file>
+			<file optional="true">plugins/wndman.ini</file>
+		</files>
+	</package>
+
+	<!-- yu_noimage_ ID:auls -->
+
+	<package>
+		<id>auls/addshortcut</id>
+		<name>ショートカット追加</name>
+		<overview>拡張編集関連のショートカットを追加</overview>
+		<description>拡張編集用のショートカットを追加する</description>
+		<developer>yu_noimage_</developer>
+		<dependencies>
+			<dependency>ePi/aulsMemref</dependency>
+		</dependencies>
+		<pageURL>https://auls.client.jp/</pageURL>
+		<downloadURL>https://auls.client.jp/</downloadURL>
+		<latestVersion>2014/05/06</latestVersion>
+		<files>
+			<file archivePath="auls_addshortcut">plugins/auls_addshortcut.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>auls/aliaslist</id>
+		<name>エイリアス一覧</name>
+		<overview>エイリアス一覧からエイリアスを配置できるようにする</overview>
+		<description
+		>エイリアス一覧からエイリアスを配置できるようにします。</description>
+		<developer>yu_noimage_</developer>
+		<dependencies>
+			<dependency>ePi/aulsMemref</dependency>
+		</dependencies>
+		<pageURL>https://auls.client.jp/</pageURL>
+		<downloadURL>https://auls.client.jp/</downloadURL>
+		<latestVersion>2014/05/06</latestVersion>
+		<files>
+			<file archivePath="auls_aliaslist">plugins/auls_aliaslist.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>auls/confirmclose</id>
+		<name>終了確認</name>
+		<overview>プロジェクトを閉じる前に確認メッセージを表示する</overview>
+		<description
+		>拡張編集に未保存のデータがある場合、プロジェクトを閉じる前に確認メッセージを表示します。</description>
+		<developer>yu_noimage_</developer>
+		<dependencies>
+			<dependency>ePi/aulsMemref</dependency>
+		</dependencies>
+		<pageURL>https://auls.client.jp/</pageURL>
+		<downloadURL>https://auls.client.jp/</downloadURL>
+		<latestVersion>2014/05/06</latestVersion>
+		<files>
+			<file archivePath="auls_confirmclose">plugins/auls_confirmclose.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>auls/outputpng</id>
+		<name>PNG出力</name>
+		<overview>現在フレームの画像をPNG形式で出力</overview>
+		<description
+		>現在フレームの画像をPNG形式で出力します。アルファチャンネルの有無を選べます。</description>
+		<developer>yu_noimage_</developer>
+		<pageURL>https://auls.client.jp/</pageURL>
+		<downloadURL>https://auls.client.jp/</downloadURL>
+		<latestVersion>2014/04/06</latestVersion>
+		<files>
+			<file archivePath="auls_outputpng/">plugins/auls_outputpng.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>auls/rendermask</id>
+		<name>出力マスク</name>
+		<overview>オブジェクトを配置した範囲の出力をキャンセルする</overview>
+		<description>オブジェクトを配置した範囲の出力をキャンセルします。</description>
+		<developer>yu_noimage_</developer>
+		<pageURL>https://auls.client.jp/</pageURL>
+		<downloadURL>https://auls.client.jp/</downloadURL>
+		<latestVersion>2014/04/16</latestVersion>
+		<files>
+			<file archivePath="auls_rendermask">plugins/auls_rendermask.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>auls/transparence</id>
+		<name>拡張編集を半透明化</name>
+		<overview>拡張編集ウィンドウを半透明にする</overview>
+		<description
+		>拡張編集ウィンドウを半透明にします。後ろにあるウィンドウをマウスで操作することもできます。</description>
+		<developer>yu_noimage_</developer>
+		<pageURL>https://auls.client.jp/</pageURL>
+		<downloadURL>https://auls.client.jp/</downloadURL>
+		<latestVersion>2013/01/08</latestVersion>
+		<files>
+			<file archivePath="auls_transparence">plugins/auls_transparence.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>auls/framesound</id>
+		<name>フレーム移動時に音を鳴らす</name>
+		<overview>現在フレームを移動させた時に、そのフレームの音を鳴らす</overview>
+		<description>編集中、現在フレームの音を鳴らすプラグインです。</description>
+		<developer>yu_noimage_</developer>
+		<pageURL>https://auls.client.jp/</pageURL>
+		<downloadURL>https://auls.client.jp/</downloadURL>
+		<latestVersion>2012/09/10</latestVersion>
+		<files>
+			<file archivePath="framesound">plugins/framesound.auf</file>
+		</files>
+	</package>
+
+	<!-- AviUtl実験室 ID:AviUtlLab -->
+
+	<package>
+		<id>AviUtlLab/animate</id>
+		<name>アニメーション編集 for AviUtl</name>
+		<overview>スクリプトを読み込んで動画を編集する</overview>
+		<description
+		>スクリプトを読み込んで動画を編集するプラグインです。座標や色などのパラメータにフレーム番号を含む数式を記述できるので動きなどを表現できます。</description>
+		<developer>AviUtl実験室</developer>
+		<pageURL
+		>https://videoinfo.tenchi.ne.jp/?%A5%A2%A5%CB%A5%E1%A1%BC%A5%B7%A5%E7%A5%F3%CA%D4%BD%B8%20for%20AviUtl</pageURL>
+		<downloadURL
+		>https://videoinfo.tenchi.ne.jp/?%A5%A2%A5%CB%A5%E1%A1%BC%A5%B7%A5%E7%A5%F3%CA%D4%BD%B8%20for%20AviUtl</downloadURL>
+		<latestVersion>ver1.4</latestVersion>
+		<files>
+			<file archivePath="animate/">plugins/animate.auf</file>
+			<file archivePath="animate/">plugins/animation.txt</file>
+		</files>
+	</package>
+
+	<package>
+		<id>AviUtlLab/chapter</id>
+		<name>チャプター編集 for AviUtl</name>
+		<overview>ogm/mkv/mp4用のチャプターファイルを作成する</overview>
+		<description
+		>ogm/mkv/mp4用のチャプターファイルを作成するためのプラグインです。表示メニューに「チャプター編集」を追加します。</description>
+		<developer>AviUtl実験室</developer>
+		<pageURL
+		>https://videoinfo.tenchi.ne.jp/?%A5%C1%A5%E3%A5%D7%A5%BF%A1%BC%CA%D4%BD%B8%20for%20AviUtl</pageURL>
+		<downloadURL
+		>https://videoinfo.tenchi.ne.jp/?%A5%C1%A5%E3%A5%D7%A5%BF%A1%BC%CA%D4%BD%B8%20for%20AviUtl</downloadURL>
+		<latestVersion>ver0.6</latestVersion>
+		<files>
+			<file archivePath="chapter/">plugins/chapter.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>AviUtlLab/croma</id>
+		<name>クロマキー画像作成プラグイン</name>
+		<overview>クロマキー合成用の画像またはマスク画像を作る</overview>
+		<description
+		>指定範囲内、または範囲外の色を塗り潰してクロマキー合成用の画像またはマスク画像を作るプラグインです。また、マウスクリックした場所の座標と色をポップアップダイアログで表示できます。</description>
+		<developer>AviUtl実験室</developer>
+		<pageURL
+		>https://videoinfo.tenchi.ne.jp/?%A5%A2%A5%CB%A5%E1%A1%BC%A5%B7%A5%E7%A5%F3%CA%D4%BD%B8%20for%20AviUtl#bc777792</pageURL>
+		<downloadURL
+		>https://videoinfo.tenchi.ne.jp/?%A5%A2%A5%CB%A5%E1%A1%BC%A5%B7%A5%E7%A5%F3%CA%D4%BD%B8%20for%20AviUtl#bc777792</downloadURL>
+		<latestVersion>ver0.1</latestVersion>
+		<files>
+			<file archivePath="croma/">plugins/croma.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>AviUtlLab/cmdex</id>
+		<name>コマンド実行 for AviUtl</name>
+		<overview>バッチ処理にコマンドラインによる処理を組み込む</overview>
+		<description
+		>バッチ処理にコマンドラインツールによる処理を組み込むための出力プラグインです。このプラグイン自体は何も出力しません（一時ファイルは作ります）。使うにはコマンドラインツールを扱える知識が必要です。</description>
+		<developer>AviUtl実験室</developer>
+		<pageURL
+		>https://videoinfo.tenchi.ne.jp/?%A5%B3%A5%DE%A5%F3%A5%C9%BC%C2%B9%D4%20for%20AviUtl</pageURL>
+		<downloadURL
+		>https://videoinfo.tenchi.ne.jp/?%A5%B3%A5%DE%A5%F3%A5%C9%BC%C2%B9%D4%20for%20AviUtl</downloadURL>
+		<latestVersion>ver0.3</latestVersion>
+		<files>
+			<file archivePath="cmdex/">plugins/cmdex.auo</file>
+			<file archivePath="cmdex/">plugins/cmdex.txt</file>
+			<file archivePath="cmdex/">plugins/powerctl.exe</file>
+		</files>
+	</package>
+
+	<package>
+		<id>AviUtlLab/dsinput</id>
+		<name>DirectShow File Reader</name>
+		<overview>様々なファイルを読み込む</overview>
+		<description
+		>AviUtl0.98以降で使用できるDirectShow入力プラグインです。</description>
+		<developer>AviUtl実験室</developer>
+		<pageURL
+		>https://videoinfo.tenchi.ne.jp/?DirectShow%20File%20Reader%20%A5%D7%A5%E9%A5%B0%A5%A4%A5%F3%20for%20AviUtl</pageURL>
+		<downloadURL
+		>https://videoinfo.tenchi.ne.jp/?DirectShow%20File%20Reader%20%A5%D7%A5%E9%A5%B0%A5%A4%A5%F3%20for%20AviUtl</downloadURL>
+		<latestVersion>ver0.26a</latestVersion>
+		<files>
+			<file archivePath="ds_input/">plugins/ds_input.aui</file>
+		</files>
+	</package>
+
+	<package>
+		<id>AviUtlLab/itvfr</id>
+		<name>可変FR出力(逆テレシネ)</name>
+		<overview>30/24fps混在のソースを可変フレームレートで出力</overview>
+		<description
+		>30/24fps混在のソースを自動判定して可変フレームレートで出力するプラグインセットです。24fpsで動きが大きなシーンは24fps、それ以外は30fpsで出力されます。逆テレシネプラグインと出力プラグインのセットで動作します。</description>
+		<developer>AviUtl実験室</developer>
+		<pageURL
+		>https://videoinfo.tenchi.ne.jp/?%B2%C4%CA%D1%A5%D5%A5%EC%A1%BC%A5%E0%A5%EC%A1%BC%A5%C8%BD%D0%CE%CF%20for%20AviUtl#taa0bd65</pageURL>
+		<downloadURL
+		>https://videoinfo.tenchi.ne.jp/?%B2%C4%CA%D1%A5%D5%A5%EC%A1%BC%A5%E0%A5%EC%A1%BC%A5%C8%BD%D0%CE%CF%20for%20AviUtl#taa0bd65</downloadURL>
+		<latestVersion>ver0.9</latestVersion>
+		<files>
+			<file archivePath="itvfr/">plugins/itvfr.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>AviUtlLab/itvfrdeint</id>
+		<name>可変FR出力(逆テレシネ・インターレース解除)</name>
+		<overview>30/24fps混在のソースを可変フレームレートで出力</overview>
+		<description
+		>30/24fps混在のソースを自動判定して可変フレームレートで出力するプラグインセットです。24fpsで動きが大きなシーンは24fps、それ以外は30fpsで出力されます。逆テレシネプラグインと出力プラグインのセットで動作します。</description>
+		<developer>AviUtl実験室</developer>
+		<pageURL
+		>https://videoinfo.tenchi.ne.jp/?%B2%C4%CA%D1%A5%D5%A5%EC%A1%BC%A5%E0%A5%EC%A1%BC%A5%C8%BD%D0%CE%CF%20for%20AviUtl#taa0bd65</pageURL>
+		<downloadURL
+		>https://videoinfo.tenchi.ne.jp/?%B2%C4%CA%D1%A5%D5%A5%EC%A1%BC%A5%E0%A5%EC%A1%BC%A5%C8%BD%D0%CE%CF%20for%20AviUtl#taa0bd65</downloadURL>
+		<latestVersion>ver0.9</latestVersion>
+		<files>
+			<file archivePath="itvfr/">plugins/itvfr_deint.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>AviUtlLab/vfrout</id>
+		<name>可変FR出力(AVI出力)</name>
+		<overview>30/24fps混在のソースを可変フレームレートで出力</overview>
+		<description
+		>30/24fps混在のソースを自動判定して可変フレームレートで出力するプラグインセットです。24fpsで動きが大きなシーンは24fps、それ以外は30fpsで出力されます。逆テレシネプラグインと出力プラグインのセットで動作します。</description>
+		<developer>AviUtl実験室</developer>
+		<pageURL
+		>https://videoinfo.tenchi.ne.jp/?%B2%C4%CA%D1%A5%D5%A5%EC%A1%BC%A5%E0%A5%EC%A1%BC%A5%C8%BD%D0%CE%CF%20for%20AviUtl#d81965c2</pageURL>
+		<downloadURL
+		>https://videoinfo.tenchi.ne.jp/?%B2%C4%CA%D1%A5%D5%A5%EC%A1%BC%A5%E0%A5%EC%A1%BC%A5%C8%BD%D0%CE%CF%20for%20AviUtl#d81965c2</downloadURL>
+		<latestVersion>ver0.5</latestVersion>
+		<files>
+			<file archivePath="vfrout/">plugins/vfrout.auo</file>
+			<file optional="true">plugins/vfrout.ini</file>
+		</files>
+	</package>
+
+	<package>
+		<id>AviUtlLab/wmvoutvfr</id>
+		<name>可変FR出力(WMV出力)</name>
+		<overview>30/24fps混在のソースを可変フレームレートで出力</overview>
+		<description
+		>30/24fps混在のソースを自動判定して可変フレームレートで出力するプラグインセットです。24fpsで動きが大きなシーンは24fps、それ以外は30fpsで出力されます。逆テレシネプラグインと出力プラグインのセットで動作します。</description>
+		<developer>AviUtl実験室</developer>
+		<pageURL
+		>https://videoinfo.tenchi.ne.jp/?%B2%C4%CA%D1%A5%D5%A5%EC%A1%BC%A5%E0%A5%EC%A1%BC%A5%C8%BD%D0%CE%CF%20for%20AviUtl#m37cd4ca</pageURL>
+		<downloadURL
+		>https://videoinfo.tenchi.ne.jp/?%B2%C4%CA%D1%A5%D5%A5%EC%A1%BC%A5%E0%A5%EC%A1%BC%A5%C8%BD%D0%CE%CF%20for%20AviUtl#m37cd4ca</downloadURL>
+		<latestVersion>ver0.5a</latestVersion>
+		<files>
+			<file archivePath="wmvout_vfr/">plugins/wmvout_vfr.auo</file>
+		</files>
+	</package>
+
+	<package>
+		<id>AviUtlLab/x264out</id>
+		<name>可変FR出力(x264出力)</name>
+		<overview>30/24fps混在のソースを可変フレームレートで出力</overview>
+		<description
+		>30/24fps混在のソースを自動判定して可変フレームレートで出力するプラグインセットです。24fpsで動きが大きなシーンは24fps、それ以外は30fpsで出力されます。逆テレシネプラグインと出力プラグインのセットで動作します。</description>
+		<developer>AviUtl実験室</developer>
+		<pageURL
+		>https://videoinfo.tenchi.ne.jp/?%B2%C4%CA%D1%A5%D5%A5%EC%A1%BC%A5%E0%A5%EC%A1%BC%A5%C8%BD%D0%CE%CF%20for%20AviUtl#ua42580e</pageURL>
+		<downloadURL
+		>https://videoinfo.tenchi.ne.jp/?%B2%C4%CA%D1%A5%D5%A5%EC%A1%BC%A5%E0%A5%EC%A1%BC%A5%C8%BD%D0%CE%CF%20for%20AviUtl#ua42580e</downloadURL>
+		<latestVersion>ver0.9</latestVersion>
+		<files>
+			<file archivePath="x264out/">plugins/x264out.auo</file>
+			<file archivePath="x264out/">plugins/x264out.ini</file>
+		</files>
+	</package>
+
+	<!-- ePi ID:ePi -->
+
+	<package>
+		<id>ePi/aulsMemref</id>
+		<name>Aulsメモリ参照プラグイン</name>
+		<overview>他のメモリを参照するプラグインやDLLで必要</overview>
+		<description
+		>AviUtl version 1.00以降(1.10など)で使えるメモリ参照プラグインです。拡張編集は0.92です。</description>
+		<developer>ePi</developer>
+		<originalDeveloper>yu_noimage_</originalDeveloper>
+		<dependencies>
+			<dependency>exedit0.92</dependency>
+		</dependencies>
+		<pageURL
+		>https://scrapbox.io/ePi5131/Auls%E3%83%A1%E3%83%A2%E3%83%AA%E5%8F%82%E7%85%A7%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3</pageURL>
+		<downloadURL
+		>https://scrapbox.io/ePi5131/Auls%E3%83%A1%E3%83%A2%E3%83%AA%E5%8F%82%E7%85%A7%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3</downloadURL>
+		<latestVersion>2021/05/23</latestVersion>
+		<files>
+			<file>plugins/auls_memref.auf</file>
+		</files>
+		<releases>
+			<release version="2021/05/23">
+				<integrities>
+					<integrity
+						target="plugins/auls_memref.auf"
+					>sha384-O83zl2bsuzcynGveej15GrNPf3tRDdMz1P5jkpQB/PYX/R+Oh/7XFBFWf8Z/NXRi</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>ePi/LuaJIT</id>
+		<name>LuaJIT</name>
+		<overview>スクリプトエンジン「Lua」の高速版です</overview>
+		<description
+		>AviUtl(拡張編集)のスクリプトが使うスクリプトエンジン「Lua」の高速版です。【アンインストール方法】このパッケージは拡張編集を上書きします。そのため、このパッケージをアンインストールするときは拡張編集の再インストールも併せて行う必要があります。</description>
+		<developer>ePi</developer>
+		<pageURL>https://scrapbox.io/ePi5131/LuaJIT</pageURL>
+		<downloadURL>https://scrapbox.io/ePi5131/LuaJIT</downloadURL>
+		<latestVersion>2.1.0-beta3</latestVersion>
+		<files>
+			<file installOnly="true">lua51.dll</file>
+		</files>
+		<releases>
+			<release version="2.1.0-beta3">
+				<archiveIntegrity
+				>sha384-hfvjNiRmpKd+MbPaJANABNkbqtE2Z/w+V3k3wWXUX8I2w9vQn9DtLYout4up1RAQ</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="lua51.dll"
+					>sha384-Tyx0ziJxtuafsPaBhg6OLWnKyJKE/cpfY5E+ixylKFsXeduy5j4b4AUhp3GtLuP4</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>ePi/patch</id>
+		<name>patch.aul</name>
+		<overview>拡張編集Plugin ver.0.92のバグを修正する</overview>
+		<description
+		>AviUtl ver.1.10や拡張編集Plugin ver.0.92に存在するバグを修正します。拡張編集Plugin ver.0.93rc1で修正されたバグも修正します。</description>
+		<developer>ePi</developer>
+		<dependencies>
+			<dependency>aviutl1.10</dependency>
+			<dependency>exedit0.92</dependency>
+		</dependencies>
+		<pageURL>https://scrapbox.io/ePi5131/patch.aul</pageURL>
+		<downloadURL>https://github.com/ePi5131/patch.aul/releases/latest</downloadURL>
+		<latestVersion>r33</latestVersion>
+		<files>
+			<file>patch.aul</file>
+			<file optional="true">patch.aul.json</file>
+			<file obsolete="true">plugins/patch.aul</file>
+			<file optional="true">plugins/patch.aul.json</file>
+		</files>
+		<releases>
+			<release version="r8">
+				<integrities>
+					<integrity
+						target="patch.aul"
+					>sha384-Y5+kwXflyU0gp355bol79vADMCZVIZz0yV8mcPXB0lLxNRLxEzqfOJM8BpU1Td9Y</integrity>
+				</integrities>
+			</release>
+			<release version="r11">
+				<archiveIntegrity
+				>sha384-7cWPCn0miWYLWiAcIEVyDkZFidAPTZQQzMPRHsgaoUWIL7v2x3N+L96L+tjm4BAO</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="patch.aul"
+					>sha384-6W9VOV37w21UVMqBX2ItjSbTWarxkXg/DoQUjJpQaLpJRtIt8+itur5Vm3Q6wwOu</integrity>
+				</integrities>
+			</release>
+			<release version="r14">
+				<archiveIntegrity
+				>sha384-F12wUu5o4f0Q4x7j86plKB7v1xNxB8EOKPXdJnHLnr+liunQN2CN8ViLvSUR6ohZ</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="patch.aul"
+					>sha384-tPCOyr4p2z/P+/eiuCz2ItcGoMGhBQRM43+jCheRLNzse9P4VCYz7TJiCGl1IaZX</integrity>
+				</integrities>
+			</release>
+			<release version="r19">
+				<archiveIntegrity
+				>sha384-5+jMRlIpcax35H+fO4LOiCGT9Aul9ojWmAwe/Dlx/1rCNxRHD+/EQl+2Va4MmG6/</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="patch.aul"
+					>sha384-CbHLDY6VKlgWNQPE04LkX0DeyMJBiD/Q+Ma744JSanagv8439iURG/Ldvu050ul5</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<!-- hebiiro ID:hebiiro -->
+
+	<package>
+		<id>hebiiro/adjust</id>
+		<name>最終フレーム自動調整</name>
+		<overview>最終フレームを自動的に調整します</overview>
+		<description
+		>タイムラインを編集したとき、最終フレームを自動的に調整します。</description>
+		<developer>hebiiro</developer>
+		<dependencies>
+			<dependency>exedit0.92</dependency>
+		</dependencies>
+		<pageURL>https://github.com/hebiiro/AviUtl-Plugin-AdjustLastFrame</pageURL>
+		<downloadURL
+		>https://github.com/hebiiro/AviUtl-Plugin-AdjustLastFrame/releases/latest</downloadURL>
+		<latestVersion>2.0.1</latestVersion>
+		<files>
+			<file>plugins/AdjustLastFrame.auf</file>
+			<file>plugins/auls_memref.ini</file>
+		</files>
+		<releases>
+			<release version="1.0.3">
+				<archiveIntegrity
+				>sha384-VNVpEF3UJfsE7dpTPZQmzr1sDgN++IhbBel3oDkxl0JfFRBK2mtp5/8+nxb/iBav</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="plugins/AdjustLastFrame.auf"
+					>sha384-FQ6X6IakV1rYqKzQ6CdEPqcg8Nr8CQQ7f9okkeCrXIAKG3Y5kzXBbT4xjBEYZmAY</integrity>
+					<integrity
+						target="plugins/auls_memref.ini"
+					>sha384-1DXw0EeHlfmvoflmwcohG3gHRAO9CH72t0rHtj4hcA8lhGEmyjHeKbafmxgQmkjr</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>hebiiro/DarkenWindow</id>
+		<name>黒窓</name>
+		<overview>AviUtl の見た目をダークモードにします</overview>
+		<description
+		>AviUtl の見た目をダークモードにします。インストール時にインストーラが起動します。ダークモードを使用する場合はAviUtlを`aviutl.exe`ではなく`aviutl_dark.exe`から起動してください。</description>
+		<developer>hebiiro</developer>
+		<dependencies>
+			<dependency>exedit0.92</dependency>
+			<dependency>ePi/patch</dependency>
+			<dependency>hebiiro/DarkenWindowInstaller</dependency>
+		</dependencies>
+		<pageURL>https://github.com/hebiiro/AviUtl-Plugin-DarkenWindow</pageURL>
+		<downloadURL
+		>https://github.com/hebiiro/AviUtl-Plugin-DarkenWindow/releases/latest</downloadURL>
+		<latestVersion>6.3.0</latestVersion>
+		<files>
+			<file obsolete="true">aviutl_dark.exe.manifest</file>
+			<file>plugins/DarkenWindow.aul</file>
+			<file directory="true">plugins/DarkenWindow</file>
+		</files>
+		<releases>
+			<release version="1.1.2">
+				<archiveIntegrity
+				>sha384-jYeggq6yZYhQ2zAJkhbYNR81dzTH2DmePBn1pgamb//UtUcMJpJuPc1u1jBk3EZ2</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="aviutl_dark.exe.manifest"
+					>sha384-ZmLzdhiDpGEkMWRMvJOlwbsQXYJBFzk5SqKfSBTGO6NyGmtLtcLYQ1D8LW4EpSDW</integrity>
+					<integrity
+						target="plugins/DarkenWindow.aul"
+					>sha384-ZGqBxDYXqeo9+VrSGeq150A6ELmd9itFXYydu3oe7mz9C44s/rdm5ZwNdecr3RWr</integrity>
+				</integrities>
+			</release>
+			<release version="6.3.0">
+				<archiveIntegrity
+				>sha384-g0w2TLLfiXegN8Efpks4hkdNs7ESSznCRZ4XK3tLKfe3uWqvfguyi2PzOPyxKEiv</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="plugins/DarkenWindow.aul"
+					>sha384-CDLl7NMHQoUde4YQh4jOQ+BSE5AAX9y0GFxHbPwcRLsc4a0ABYXr6/7RTVbKCFih</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>hebiiro/DarkenWindowInstaller</id>
+		<name>自動インストーラ(黒窓)</name>
+		<overview>黒窓の自動インストール</overview>
+		<description
+		>【このパッケージより先に「黒窓」をインストールする必要があります】apmから黒窓をインストールするためのパッケージです。インストール時にインストーラが起動します。</description>
+		<developer>hebiiro</developer>
+		<pageURL>https://github.com/hebiiro/AviUtl-Plugin-DarkenWindow</pageURL>
+		<downloadURL
+		>https://github.com/hebiiro/AviUtl-Plugin-DarkenWindow/releases/latest</downloadURL>
+		<latestVersion>6.3.0</latestVersion>
+		<installer>CreateDark.exe</installer>
+		<installArg>/a"$instpath" /f /x</installArg>
+		<files>
+			<file obsolete="true">placeholder</file>
+		</files>
+	</package>
+
+	<package>
+		<id>hebiiro/DragFilter</id>
+		<name>フィルタドラッグ移動</name>
+		<overview>フィルタをドラッグして移動できるようにする</overview>
+		<description
+		>オブジェクトダイアログのフィルタをドラッグして移動できるようにします。</description>
+		<developer>hebiiro</developer>
+		<dependencies>
+			<dependency>exedit0.92</dependency>
+		</dependencies>
+		<pageURL>https://github.com/hebiiro/AviUtl-Plugin-DragFilter</pageURL>
+		<downloadURL
+		>https://github.com/hebiiro/AviUtl-Plugin-DragFilter/releases/latest</downloadURL>
+		<latestVersion>9.0.0</latestVersion>
+		<files>
+			<file>plugins/DragFilter.auf</file>
+			<file>plugins/DragFilter.ini</file>
+		</files>
+		<releases>
+			<release version="1.0.0">
+				<archiveIntegrity
+				>sha384-cC+vsryk+9F4LP32nAB+3ljqQRd3r8PvR7ESThP7YV8ZPJ+/K67d0gH+Nq2F7jpl</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="plugins/DragFilter.auf"
+					>sha384-UyWbNedy6Yyr+PFYQKfvKFmtKlQdXZftY6p/ONTwwBITRA24jB/qZJl9/yAJZJAp</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>hebiiro/OptimizeEditBox</id>
+		<name>エディットボックス最適化</name>
+		<overview>拡張編集の冗長なフレームの更新処理を抑制します</overview>
+		<description>拡張編集の冗長なフレームの更新処理を抑制します。</description>
+		<developer>hebiiro</developer>
+		<dependencies>
+			<dependency>exedit0.92</dependency>
+		</dependencies>
+		<pageURL>https://github.com/hebiiro/AviUtl-Plugin-OptimizeEditBox</pageURL>
+		<downloadURL
+		>https://github.com/hebiiro/AviUtl-Plugin-OptimizeEditBox/releases/latest</downloadURL>
+		<latestVersion>7.1.1</latestVersion>
+		<files>
+			<file>plugins/OptimizeEditBox.auf</file>
+			<file>plugins/OptimizeEditBox.ini</file>
+		</files>
+		<releases>
+			<release version="2.1.1">
+				<archiveIntegrity
+				>sha384-AVDqBYAciHjnsTmGhv4FBT+yCQ7dnHEfiBSm9k/H2jkCnieTOLzUGtI0MIxEfOZ1</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="plugins/OptimizeEditBox.auf"
+					>sha384-K0NjhzyhuC0zz5ni7wVp5fN88hjq51T6nXKFaxcYAD07spHFL8GlybUpdTZnjt61</integrity>
+					<integrity
+						target="plugins/OptimizeEditBox.ini"
+					>sha384-3HEfWTxWmAHkHGrGLRdzhxa+cV9e+Xfwhgc3dD+1/LiiBjrxmReR2SAwj95Sivvl</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>hebiiro/SelectAliasFolder</id>
+		<name>エイリアスフォルダ選択</name>
+		<overview>エイリアスフォルダを選択できるようにする</overview>
+		<description
+		>エイリアスフォルダをコンボボックスで選択できるようにします。</description>
+		<developer>hebiiro</developer>
+		<dependencies>
+			<dependency>exedit0.92</dependency>
+		</dependencies>
+		<pageURL>https://github.com/hebiiro/AviUtl-Plugin-SelectAliasFolder</pageURL>
+		<downloadURL
+		>https://github.com/hebiiro/AviUtl-Plugin-SelectAliasFolder/releases/latest</downloadURL>
+		<latestVersion>1.0.0</latestVersion>
+		<files>
+			<file>plugins/SelectAliasFolder.auf</file>
+		</files>
+		<releases>
+			<release version="1.0.0">
+				<archiveIntegrity
+				>sha384-ZbCesHBFc6k9C+cHAtSxknv+qGfIG+x4jkOYQ+Qek3py3vrNRmaqb3t/7NlEQ63q</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="plugins/SelectAliasFolder.auf"
+					>sha384-bE4xxQxErK6izZLYfTrnIxTG0Y9rbFl7VbDrYxOdpU15Wjx7QviZ7ta3NSkCr64G</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>hebiiro/SelectFavoriteFont</id>
+		<name>お気に入りフォント選択</name>
+		<overview>最近使ったフォントを選択できるようにする</overview>
+		<description
+		>テキストオブジェクトのオブジェクト編集ダイアログで、お気に入り、または最近使ったフォントからフォントを選択できるようにします。</description>
+		<developer>hebiiro</developer>
+		<dependencies>
+			<dependency>exedit0.92</dependency>
+		</dependencies>
+		<pageURL>https://github.com/hebiiro/AviUtl-Plugin-SelectFavoriteFont</pageURL>
+		<downloadURL
+		>https://github.com/hebiiro/AviUtl-Plugin-SelectFavoriteFont/releases/latest</downloadURL>
+		<latestVersion>5.2.1</latestVersion>
+		<files>
+			<file>plugins/SelectFavoriteFont.auf</file>
+			<file>plugins/SelectFavoriteFont.xml</file>
+		</files>
+		<releases>
+			<release version="5.1.2">
+				<archiveIntegrity
+				>sha384-OnscpLHWlkzmqkVmIRWE5hMjh95+MlKS7pzdNo0EFXnM1/cEpE6uhB8xZ/X31yUg</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="plugins/SelectFavoriteFont.auf"
+					>sha384-iZ23/fJUGHue/f6CikFxYWQ6rzcOt7+S3weRnhzDKZLsqYFOv6mgEq64SR+fYVgp</integrity>
+					<integrity
+						target="plugins/SelectFavoriteFont.xml"
+					>sha384-wqIkwu+BCXfIe3Twd+Grs77IfhVzeMBMAB+HFDXSbrKc53w66W/Ty5Ouh5HW4EKg</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>hebiiro/SwitchSettings</id>
+		<name>設定切り替え</name>
+		<overview>起動時に設定ファイルを選択できるようにする</overview>
+		<description
+		>起動時に設定ファイルがあるフォルダを選択できるようにします。プログラムの挙動から考えてセキュリティソフトからウィルス扱いされる可能性があります。そのときは例外に指定するとか自分でソースコードを改良してビルドするとか各自で対策をとってください。</description>
+		<developer>hebiiro</developer>
+		<dependencies>
+			<dependency>exedit0.92</dependency>
+		</dependencies>
+		<pageURL>https://github.com/hebiiro/AviUtl-Plugin-SwitchSettings</pageURL>
+		<downloadURL
+		>https://github.com/hebiiro/AviUtl-Plugin-SwitchSettings/releases/latest</downloadURL>
+		<latestVersion>1.0.1</latestVersion>
+		<files>
+			<file directory="true">SwitchSettings</file>
+			<file>SwitchSettings.dll</file>
+			<file>SwitchSettings.exe</file>
+		</files>
+		<releases>
+			<release version="1.0.1">
+				<archiveIntegrity
+				>sha384-tY9lZrNmLRXlRvJ5fY3FLPkSz4aidtSSSjM2bhRL6dhWZzFOqu8c69EswJx+Z105</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="SwitchSettings.dll"
+					>sha384-muThntkEjBGn2t5/Yv7bqbZ8i69ffl0WkEP9eoBTJ+OPP9GEpGXSDaaJPJVq/2Zg</integrity>
+					<integrity
+						target="SwitchSettings.exe"
+					>sha384-HJ5PFgi/yEdxfxfvCXYey6I3q34OAFYG7Ji8vkrjVd9TsG7RMWAuFBbJY/xwU3o8</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<!-- HolyWu ID:HolyWu -->
+
+	<package>
+		<id>HolyWu/LSMASHWorks</id>
+		<name>L-SMASH Works</name>
+		<overview>様々な形式の動画・音楽ファイルを読み込む</overview>
+		<description
+		>様々な形式の動画・音楽ファイルを読み込み可能にします。VFR-maniac氏が L-SMASH Works 開発の一環として実装を進めている OSS のHolyWu氏版です。Mr-Ojii氏により毎日最新のffmpegを用いてビルドされています。</description>
+		<developer>HolyWu</developer>
+		<originalDeveloper>VFR-maniac</originalDeveloper>
+		<pageURL>https://github.com/HolyWu/L-SMASH-Works</pageURL>
+		<downloadURL
+		>https://github.com/Mr-Ojii/L-SMASH-Works-Auto-Builds/releases/latest</downloadURL>
+		<latestVersion continuous="true">最新</latestVersion>
+		<files>
+			<file>plugins/lwcolor.auc</file>
+			<file>plugins/lwdumper.auf</file>
+			<file>plugins/lwinput.aui</file>
+			<file>plugins/lwmuxer.auf</file>
+		</files>
+	</package>
+
+	<!-- karoterra ID:karoterra -->
+
+	<package>
+		<id>karoterra/aviutlWaveformPreview</id>
+		<name>aviutl_WaveformPreview</name>
+		<overview>編集中の音声波形を確認する</overview>
+		<description
+		>AviUtl で編集中の音声波形を確認するためのプラグインです。AviUtl の「設定→波形プレビュー」の設定メニューから波形プレビュープラグインの画面を表示してください。</description>
+		<developer>karoterra</developer>
+		<pageURL>https://github.com/karoterra/aviutl_WaveformPreview</pageURL>
+		<downloadURL
+		>https://github.com/karoterra/aviutl_WaveformPreview/releases/latest</downloadURL>
+		<latestVersion>v0.3.0</latestVersion>
+		<files>
+			<file
+				archivePath="aviutl_WaveformPreview_v0.3.0"
+			>plugins/WaveformPreview.auf</file>
+			<file
+				archivePath="aviutl_WaveformPreview_v0.3.0"
+			>plugins/WaveformPreview.exe</file>
+		</files>
+	</package>
+
+	<package>
+		<id>karoterra/bend</id>
+		<name>曲げKR</name>
+		<overview>画像を曲線に沿って曲げるスクリプト</overview>
+		<description>画像を曲線に沿って曲げる AviUtl スクリプトです。</description>
+		<developer>karoterra</developer>
+		<pageURL>https://github.com/karoterra/aviutl-Bend</pageURL>
+		<downloadURL
+		>https://github.com/karoterra/aviutl-Bend/releases/latest</downloadURL>
+		<latestVersion>v1.0.0</latestVersion>
+		<files>
+			<file>script/karoterra/@曲げKR.anm</file>
+			<file>script/karoterra/KaroterraBend.lua</file>
+		</files>
+		<releases>
+			<release version="v1.0.0">
+				<archiveIntegrity
+				>sha384-kQZEZuH0rR6desFAEPGef04zoc8yu/m1T4P7Jw8SgLJp7eY61m/I+Dy+Ep6DxjMe</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="script/karoterra/@曲げKR.anm"
+					>sha384-KKoIgVpouYx6YWBq25bpYaQTVdO8kLkIdN9OHw0vRmjPgGehWW4KDMIJ2xsUpBsG</integrity>
+					<integrity
+						target="script/karoterra/KaroterraBend.lua"
+					>sha384-g0AopPBYkSYI8T/Vk+Pz/fsK8bzoCNGGUfSx3ghDN/vcP8GhIyX2FJqrxWLAldIg</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>karoterra/DynamicPolygon</id>
+		<name>動く多角形</name>
+		<overview
+		>トラックバーで指定した頂点座標をもとに多角形を描画するスクリプト</overview>
+		<description
+		>トラックバーで指定した頂点座標をもとに多角形を描画する AviUtl スクリプトです。</description>
+		<developer>karoterra</developer>
+		<pageURL>https://github.com/karoterra/aviutl-DynamicPolygon</pageURL>
+		<downloadURL
+		>https://github.com/karoterra/aviutl-DynamicPolygon/releases/latest</downloadURL>
+		<latestVersion>v1.0.2</latestVersion>
+		<files>
+			<file>script/karoterra/KaroterraDynamicPolygon.dll</file>
+			<file>script/karoterra/動く多角形ベース.obj</file>
+			<file>script/karoterra/@動く多角形.anm</file>
+		</files>
+		<releases>
+			<release version="v1.0.2">
+				<archiveIntegrity
+				>sha384-v8baIFOdmqDd7oe/WOQLH0e8j6ni4YcJmGrJ74/zUtViIafFb0C1ql27s3qD7O2w</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="script/karoterra/KaroterraDynamicPolygon.dll"
+					>sha384-KHSGoE5lbIMyYBRtuvzvJ7hp3l6qD7FccL4BeXp+nwpQW39tM525TBrkgaiNOjEQ</integrity>
+					<integrity
+						target="script/karoterra/動く多角形ベース.obj"
+					>sha384-NJPZWMxFWvMp9iBoNljSU64NzOGGe0sP+larP9l7ktT/O9xcrTt1g5ME0dhHzzSa</integrity>
+					<integrity
+						target="script/karoterra/@動く多角形.anm"
+					>sha384-Bnyi2kh0K/eDYbuiyKwCZi8nVSxFbOr5nl6lB132Wl9mNJvMiclAh7pHNK7G/Ykz</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>karoterra/OilPainting</id>
+		<name>油絵</name>
+		<overview>油絵風の加工を施すアニメーション効果</overview>
+		<description
+		>Kuwahara filter により油絵風の加工を施す AviUtl スクリプトです。高橋直哉氏の油絵スクリプトの処理速度を向上させたものです。</description>
+		<developer>karoterra</developer>
+		<pageURL>https://github.com/karoterra/aviutl-OilPainting</pageURL>
+		<downloadURL
+		>https://github.com/karoterra/aviutl-OilPainting/releases/latest</downloadURL>
+		<latestVersion>v1.0.1</latestVersion>
+		<files>
+			<file>script/karoterra/KaroterraOilPainting.dll</file>
+			<file>script/karoterra/油絵.anm</file>
+		</files>
+		<releases>
+			<release version="v1.0.1">
+				<archiveIntegrity
+				>sha384-hVfMvLMwJ9SWgUAXqzos0ci56kUjP8wbwcbgvjnOEmixzFMSaHsfF2B8p4o423gy</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="script/karoterra/KaroterraOilPainting.dll"
+					>sha384-OIbc00TOruQRt24IojLBbnApEVOsaVgzoHZBVcUINk8nwoLrtHbowX9TOsKRCyhM</integrity>
+					<integrity
+						target="script/karoterra/油絵.anm"
+					>sha384-2Ns5FaSZaP/EZCZd3js91FKPBHR8AwU/Vhf32riHw7xo086Knn0ToQaZ8Cr92lwp</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>karoterra/MarkdownEX</id>
+		<name>AviUtl MarkdownEX</name>
+		<overview>aviutl_browserを利用してMarkdownを表示する</overview>
+		<description
+		>aviutl_browserを使ってAviUtlでMarkdownを表示するスクリプト。aviutl_browser同梱のMarkdown.anmを元に機能拡張を行ったものです。</description>
+		<developer>karoterra</developer>
+		<dependencies>
+			<dependency>oov/aviutlBrowser</dependency>
+		</dependencies>
+		<pageURL>https://github.com/karoterra/aviutl-markdownex</pageURL>
+		<downloadURL
+		>https://github.com/karoterra/aviutl-markdownex/releases/latest</downloadURL>
+		<latestVersion>v0.2.0</latestVersion>
+		<files>
+			<file archivePath="script/browser">script/browser/MarkdownEX.anm</file>
+			<file archivePath="script/browser">script/browser/MarkdownEX.exa</file>
+			<file archivePath="script/browser">script/browser/MarkdownEX.obj</file>
+			<file
+				archivePath="script/browser/contents"
+			>script/browser/contents/MarkdownEX-emoji-list.html</file>
+			<file
+				archivePath="script/browser/contents"
+				directory="true"
+			>script/browser/contents/MarkdownEX</file>
+		</files>
+	</package>
+
+	<package>
+		<id>karoterra/ShowLimit</id>
+		<name>上限確認</name>
+		<overview>スクリプト名等のバッファの使用率を確認する</overview>
+		<description
+		>AviUtl 拡張編集内部に存在するスクリプト名等のバッファの使用率を確認するプラグインです。 これにより、あとどれくらいスクリプトを追加できるか確認できます。</description>
+		<developer>karoterra</developer>
+		<pageURL>https://github.com/karoterra/aviutl_ShowLimit</pageURL>
+		<downloadURL
+		>https://github.com/karoterra/aviutl_ShowLimit/releases/latest</downloadURL>
+		<latestVersion>v0.2.0</latestVersion>
+		<files>
+			<file>plugins/ShowLimit.auf</file>
+		</files>
+		<releases>
+			<release version="v0.1.0">
+				<archiveIntegrity
+				>sha384-fcerL9dZNDObOM+U1IRXOY+cUOijqbOxIl37nUhwLqLAK+yW2NhbY7pFhMxhdrx8</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="plugins/ShowLimit.auf"
+					>sha384-BAeuliq8jhmSJK3sMc+NzTeZhyyo+moZkl+06N1AiXGOO5l8IHD+gDbkw2RC3ums</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<!-- khsk ID:khsk -->
+
+	<package>
+		<id>khsk/LocalFontPlugin</id>
+		<name>LocalFontPlugin</name>
+		<overview>AviUtlにフォントを追加する</overview>
+		<description
+		>AviUtlのFontsディレクトリ内のフォントを一時的に追加するプラグインです。</description>
+		<developer>khsk</developer>
+		<pageURL>https://qiita.com/khsk/items/997adf671dfae94bb455</pageURL>
+		<downloadURL
+		>https://github.com/khsk/AviUtl-LocalFontPlugin/releases/latest</downloadURL>
+		<latestVersion>v3.0</latestVersion>
+		<files>
+			<file>plugins/localfont.aul</file>
+		</files>
+		<releases>
+			<release version="v2.0">
+				<archiveIntegrity
+				>sha384-X0ntO0/ijbouHneUkp7/Uy9LUXb2Ytob29vyxahUrRYK2mAO8M2Sr50RRREe+5U8</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="plugins/localfont.aul"
+					>sha384-MKcUHw90iVYraS2f7a41NRva/ua44zCFgJH9lg5ja5jOGGwKgmSWzNX51sd8hX76</integrity>
+				</integrities>
+			</release>
+			<release version="v3.0">
+				<archiveIntegrity
+				>sha384-W+EjT7hUHVNr+qKyzbn5AB2AoM+0oUIOekR0m4faIk7khqDj2RFoVV/D1Ag3EomW</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="plugins/localfont.aul"
+					>sha384-5mDVuexCiP98ap0hRxLJ99DHMbCQEDOEueJy1BhZSc+Z9EggXzCYsq0HDrIchIck</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<!-- Maverick Tse ID:MaverickTse -->
+
+	<package>
+		<id>MaverickTse/AGifExport</id>
+		<name>Animated Gif Export</name>
+		<overview>アニメーションGIFを出力する</overview>
+		<description
+		>動画のエンコードと同じ要領でアニメーションGIFの出力ができます。</description>
+		<developer>Maverick Tse</developer>
+		<pageURL>https://www.nicovideo.jp/watch/sm24236552</pageURL>
+		<downloadURL>https://onedrive.live.com/?id=26840CDF9818EB8E%21391</downloadURL>
+		<latestVersion>v0.51 beta</latestVersion>
+		<files>
+			<file archivePath="AGifExportPack">AForge.dll</file>
+			<file archivePath="AGifExportPack">AForge.Imaging.dll</file>
+			<file archivePath="AGifExportPack">AForge.Imaging.Formats.dll</file>
+			<file archivePath="AGifExportPack">AGifExport.auo</file>
+			<file archivePath="AGifExportPack">CORE_RL_bzlib_.dll</file>
+			<file archivePath="AGifExportPack">CORE_RL_glib_.dll</file>
+			<file archivePath="AGifExportPack">CORE_RL_lcms_.dll</file>
+			<file archivePath="AGifExportPack">CORE_RL_lqr_.dll</file>
+			<file archivePath="AGifExportPack">CORE_RL_magick_.dll</file>
+			<file archivePath="AGifExportPack">CORE_RL_ttf_.dll</file>
+			<file archivePath="AGifExportPack">CORE_RL_wand_.dll</file>
+			<file archivePath="AGifExportPack">CORE_RL_zlib_.dll</file>
+			<file archivePath="AGifExportPack">IM_MOD_RL_gif_.dll</file>
+			<file archivePath="AGifExportPack">msvcp120.dll</file>
+			<file archivePath="AGifExportPack">msvcr120.dll</file>
+			<file archivePath="AGifExportPack">thresholds.xml</file>
+			<file archivePath="AGifExportPack">vcomp120.dll</file>
+		</files>
+		<releases>
+			<release version="v0.51 beta">
+				<integrities>
+					<integrity
+						target="AGifExport.auo"
+					>sha384-5vZn/bLFtFF7vZd05QjxhxxrxnSulTTiGjaGqM+vsn6MljbkddZoyH75gLseI0dd</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>MaverickTse/MotionTrackingMK2</id>
+		<name>Motion Tracking MK-II</name>
+		<overview>モーショントラッキング機能を追加する</overview>
+		<description
+		>動画中の物体の動きに追従するモーショントラッキング機能を追加します。</description>
+		<developer>Maverick Tse</developer>
+		<pageURL>https://aviutl.info/motiontracking/</pageURL>
+		<downloadURL>https://onedrive.live.com/?id=26840CDF9818EB8E%21434</downloadURL>
+		<latestVersion>2014/11/17</latestVersion>
+		<files>
+			<file
+				archivePath="MotionTrackingMKII-Release"
+			>plugins/haarcascade_profileface.xml</file>
+			<file
+				archivePath="MotionTrackingMKII-Release"
+			>plugins/haarcascade_frontalface_default.xml</file>
+			<file
+				archivePath="MotionTrackingMKII-Release"
+			>plugins/MotionTrackingMKII.auf</file>
+		</files>
+		<releases>
+			<release version="2014/11/17">
+				<integrities>
+					<integrity
+						target="plugins/MotionTrackingMKII.auf"
+					>sha384-64R4Z8zmaaQj0xNLWb90s68nlalNpAukcpNS6G8o1kkH5pKL9xuZRjmqYbWxSdtv</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<!-- morgue ID:morgue-->
+
+	<package>
+		<id>morgue/tr1</id>
+		<name>MORGUEトランジション素材#1~20</name>
+		<overview>トランジション素材として使用できるPNG画像</overview>
+		<description
+		>トランジション素材として使用できるPNG画像です。シーンチェンジやワイプに対して指定できます。</description>
+		<developer>morgue</developer>
+		<pageURL>https://nega.client.jp/</pageURL>
+		<downloadURL>https://nega.client.jp/</downloadURL>
+		<latestVersion>2009/03/28</latestVersion>
+		<files>
+			<file>transition/t1.png</file>
+			<file>transition/t2.png</file>
+			<file>transition/t3.png</file>
+			<file>transition/t4.png</file>
+			<file>transition/t5.png</file>
+			<file>transition/t6.png</file>
+			<file>transition/t7.png</file>
+			<file>transition/t8.png</file>
+			<file>transition/t9.png</file>
+			<file>transition/t10.png</file>
+			<file>transition/t11.png</file>
+			<file>transition/t12.png</file>
+			<file>transition/t13.png</file>
+			<file>transition/t14.png</file>
+			<file>transition/t15.png</file>
+			<file>transition/t16.png</file>
+			<file>transition/t17.png</file>
+			<file>transition/t18.png</file>
+			<file>transition/t19.png</file>
+			<file>transition/t20.png</file>
+		</files>
+	</package>
+
+	<package>
+		<id>morgue/tr2</id>
+		<name>MORGUEトランジション素材#21~40</name>
+		<overview>トランジション素材として使用できるPNG画像</overview>
+		<description
+		>トランジション素材として使用できるPNG画像です。シーンチェンジやワイプに対して指定できます。</description>
+		<developer>morgue</developer>
+		<pageURL>https://nega.client.jp/</pageURL>
+		<downloadURL>https://nega.client.jp/</downloadURL>
+		<latestVersion>2009/03/28</latestVersion>
+		<files>
+			<file>transition/t21.png</file>
+			<file>transition/t22.png</file>
+			<file>transition/t23.png</file>
+			<file>transition/t24.png</file>
+			<file>transition/t25.png</file>
+			<file>transition/t26.png</file>
+			<file>transition/t27.png</file>
+			<file>transition/t28.png</file>
+			<file>transition/t29.png</file>
+			<file>transition/t30.png</file>
+			<file>transition/t31.png</file>
+			<file>transition/t32.png</file>
+			<file>transition/t33.png</file>
+			<file>transition/t34.png</file>
+			<file>transition/t35.png</file>
+			<file>transition/t36.png</file>
+			<file>transition/t37.png</file>
+			<file>transition/t38.png</file>
+			<file>transition/t39.png</file>
+			<file>transition/t40.png</file>
+		</files>
+	</package>
+
+	<package>
+		<id>morgue/tr3</id>
+		<name>MORGUEトランジション素材#41~50</name>
+		<overview>トランジション素材として使用できるPNG画像</overview>
+		<description
+		>トランジション素材として使用できるPNG画像です。シーンチェンジやワイプに対して指定できます。</description>
+		<developer>morgue</developer>
+		<pageURL>https://nega.client.jp/</pageURL>
+		<downloadURL>https://nega.client.jp/</downloadURL>
+		<latestVersion>2009/03/28</latestVersion>
+		<files>
+			<file>transition/t41.png</file>
+			<file>transition/t42.png</file>
+			<file>transition/t43.png</file>
+			<file>transition/t44.png</file>
+			<file>transition/t45.png</file>
+			<file>transition/t46.png</file>
+			<file>transition/t47.png</file>
+			<file>transition/t48.png</file>
+			<file>transition/t49.png</file>
+			<file>transition/t50.png</file>
+		</files>
+	</package>
+
+	<package>
+		<id>morgue/tr4</id>
+		<name>MORGUEトランジション素材#51~60</name>
+		<overview>トランジション素材として使用できるPNG画像</overview>
+		<description
+		>トランジション素材として使用できるPNG画像です。シーンチェンジやワイプに対して指定できます。</description>
+		<developer>morgue</developer>
+		<pageURL>https://nega.client.jp/</pageURL>
+		<downloadURL>https://nega.client.jp/</downloadURL>
+		<latestVersion>2009/03/28</latestVersion>
+		<files>
+			<file>transition/t51.png</file>
+			<file>transition/t52.png</file>
+			<file>transition/t53.png</file>
+			<file>transition/t54.png</file>
+			<file>transition/t55.png</file>
+			<file>transition/t56.png</file>
+			<file>transition/t57.png</file>
+			<file>transition/t58.png</file>
+			<file>transition/t59.png</file>
+			<file>transition/t60.png</file>
+		</files>
+	</package>
+
+	<!-- Mr-Ojii ID:MrOjii -->
+
+	<package>
+		<id>MrOjii/LSMASHWorks</id>
+		<name>L-SMASH Works</name>
+		<overview>様々な形式の動画・音楽ファイルを読み込む</overview>
+		<description
+		>様々な形式の動画・音楽ファイルを読み込み可能にします。VFR-maniac氏が L-SMASH Works 開発の一環として実装を進めている OSS のMr-Ojii氏版です。Mr-Ojii氏により毎日最新のffmpegを用いてビルドされています。</description>
+		<developer>Mr-Ojii</developer>
+		<originalDeveloper>VFR-maniac</originalDeveloper>
+		<pageURL>https://github.com/Mr-Ojii/L-SMASH-Works</pageURL>
+		<downloadURL
+		>https://github.com/Mr-Ojii/L-SMASH-Works-Auto-Builds/releases/latest</downloadURL>
+		<directURL
+		>https://github.com/Mr-Ojii/L-SMASH-Works-Auto-Builds/releases/latest/download/L-SMASH-Works_rev1096_Mr-Ojii_Mr-Ojii_AviUtl.zip</directURL>
+		<latestVersion continuous="true">最新</latestVersion>
+		<files>
+			<file>plugins/lwcolor.auc</file>
+			<file>plugins/lwdumper.auf</file>
+			<file>plugins/lwinput.aui</file>
+			<file>plugins/lwmuxer.auf</file>
+		</files>
+	</package>
+
+	<!-- 謎の生物 ID:nazono -->
+
+	<package>
+		<id>nazono/redoNoRuntime</id>
+		<name>Redoプラグイン(ランタイム不要・非推奨)</name>
+		<overview>Ctrl+Yキーでのやり直し機能を追加する</overview>
+		<description
+		>AviUtlにCtrl+Yキーでのやり直し機能を追加するプラグイン。元に戻す関係のバグの修正も同時に行ってくれます。</description>
+		<developer>謎の生物</developer>
+		<dependencies>
+			<dependency>exedit0.92</dependency>
+		</dependencies>
+		<pageURL
+		>https://drive.google.com/drive/folders/1OBl9qLIWDYlAghXaNUj7Sfme7hpCSSzY</pageURL>
+		<downloadURL
+		>https://drive.google.com/drive/folders/11whtRpnaNEzp-_VkORZpmHoqj5yfPrgD</downloadURL>
+		<latestVersion>v2.7</latestVersion>
+		<files>
+			<file>plugins/Redo.auf</file>
+		</files>
+		<releases>
+			<release version="v2.7">
+				<archiveIntegrity
+				>sha384-2r0hL+qtRjQCQyc0dogmR/Q3ZjdDr13IYGttudAc3We2H3Wv0zmsS9ydy5ik5r02</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="plugins/Redo.auf"
+					>sha384-ddEOS42sd1gqLqSoTx/pP19EfSBO9RDshyYILzaqnenkYk/DxoTx/gHf2q9DTkg0</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>nazono/redoRuntime</id>
+		<name>Redoプラグイン(要ランタイム・省メモリ)</name>
+		<overview>Ctrl+Yキーでのやり直し機能を追加する</overview>
+		<description
+		>AviUtlにCtrl+Yキーでのやり直し機能を追加するプラグイン。元に戻す関係のバグの修正も同時に行ってくれます。【動作にはVisual C++ 再頒布可能パッケージの2022 x86(32bit)対応の物がインストールされている必要があります】</description>
+		<developer>謎の生物</developer>
+		<dependencies>
+			<dependency>exedit0.92</dependency>
+		</dependencies>
+		<pageURL
+		>https://drive.google.com/drive/folders/1OBl9qLIWDYlAghXaNUj7Sfme7hpCSSzY</pageURL>
+		<downloadURL
+		>https://drive.google.com/drive/folders/1tg-kZSw6m3d5MLeKuA95UB8Kv_H2uoT5</downloadURL>
+		<latestVersion>v2.7rt</latestVersion>
+		<files>
+			<file>plugins/Redo.auf</file>
+		</files>
+		<releases>
+			<release version="v2.7rt">
+				<archiveIntegrity
+				>sha384-hSHKjKjQwy1XTpuGuORffr7MDjzYTQqBy2gcHsdMFlcOqYrorflZRg/vIZ6rUgH9</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="plugins/Redo.auf"
+					>sha384-0s8DAzZIdJvw0aSKbMIALM3O1ddY414jbKj02ZrlMoncLppMN8Rd52FIuZKI71bE</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<!-- Nure ID:nure500 -->
+
+	<package>
+		<id>nure500/vhs</id>
+		<name>VHS風のエフェクト</name>
+		<overview>VHS風のエフェクトです。記述内容は極めてシンプルです。</overview>
+		<description>VHS風のエフェクトです。記述内容は極めてシンプルです。</description>
+		<developer>Nure</developer>
+		<pageURL>https://twitter.com/sdkd500/status/1042352681241591810</pageURL>
+		<downloadURL
+		>https://www.dropbox.com/s/lrlzc0f34bzcvqa/VHS%E9%A2%A8.anm?dl=0</downloadURL>
+		<latestVersion>2018/9/19</latestVersion>
+		<files>
+			<file>script/nure500/VHS風.anm</file>
+		</files>
+		<releases>
+			<release version="2018/9/19">
+				<archiveIntegrity
+				>sha384-B9s9+Lg4wZmkrIbncRCd3oLxDTFLAkAYoXAzrQB04Cj/oGoXntRxlVTPXzJP4j5D</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="script/nure500/VHS風.anm"
+					>sha384-B9s9+Lg4wZmkrIbncRCd3oLxDTFLAkAYoXAzrQB04Cj/oGoXntRxlVTPXzJP4j5D</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<!-- oov ID:oov -->
+
+	<package>
+		<id>oov/aviutlBrowser</id>
+		<name>aviutl_browser</name>
+		<overview>拡張編集上にブラウザーの表示内容を持ち込む</overview>
+		<description
+		>AviUtl の拡張編集プラグイン上でブラウザーの表示内容を持ち込めるようにするためのプログラムです。使用には bridge.dll の導入が必要です。</description>
+		<developer>oov</developer>
+		<dependencies>
+			<dependency>oov/bridge</dependency>
+		</dependencies>
+		<pageURL>https://www.nicovideo.jp/watch/sm38772089</pageURL>
+		<downloadURL>https://github.com/oov/aviutl_browser/releases/latest</downloadURL>
+		<latestVersion>v0.4.1</latestVersion>
+		<files>
+			<file archivePath="script/browser" directory="true">script/browser/exe</file>
+			<file
+				archivePath="script/browser/contents"
+				directory="true"
+			>script/browser/contents/絵文字セレクター</file>
+			<file archivePath="script/browser">script/browser/browser.lua</file>
+			<file
+				archivePath="script/browser"
+				obsolete="true"
+			>script/browser/glTF表示デモ.obj</file>
+			<file archivePath="script/browser">script/browser/Markdown.anm</file>
+			<file archivePath="script/browser">script/browser/Markdown.exa</file>
+			<file
+				archivePath="script/browser"
+				obsolete="true"
+			>script/browser/SVGアニメ.obj</file>
+			<file
+				archivePath="script/browser"
+				obsolete="true"
+			>script/browser/ファイル参照デモ.obj</file>
+			<file archivePath="script/browser">script/browser/絵文字.obj</file>
+			<file
+				archivePath="script/browser/contents"
+				obsolete="true"
+			>script/browser/contents/glTF表示デモ.abc</file>
+			<file
+				archivePath="script/browser/contents"
+			>script/browser/contents/Markdown.abc</file>
+			<file
+				archivePath="script/browser/contents"
+				obsolete="true"
+			>script/browser/contents/SVGアニメ.abc</file>
+			<file
+				archivePath="script/browser/contents"
+				obsolete="true"
+			>script/browser/contents/ファイル参照デモ.abc</file>
+			<file
+				archivePath="script/browser/contents"
+			>script/browser/contents/絵文字.abc</file>
+		</files>
+	</package>
+
+	<package>
+		<id>oov/aviutlBrowserMinecraftSkin</id>
+		<name>マイクラスキン</name>
+		<overview>マインクラフト風モデルを描画する</overview>
+		<description
+		>AviUtl + 拡張編集 + aviutl_browser の環境で使用可能なマインクラフト風モデルを描画するカスタムオブジェクトです。スキン画像を読み込みで適用することができます。</description>
+		<developer>oov</developer>
+		<dependencies>
+			<dependency>oov/aviutlBrowser</dependency>
+		</dependencies>
+		<pageURL>https://github.com/oov/aviutl_browser_minecraft_skin</pageURL>
+		<downloadURL
+		>https://github.com/oov/aviutl_browser_minecraft_skin/releases/latest</downloadURL>
+		<latestVersion>v1.0</latestVersion>
+		<files>
+			<file archivePath="script/browser">script/browser/@マイクラスキン.anm</file>
+			<file archivePath="script/browser">script/browser/@マイクラスキン.obj</file>
+			<file archivePath="script/browser">script/browser/マイクラスキン-歩き.exa</file>
+			<file archivePath="script/browser">script/browser/マイクラスキン-走り.exa</file>
+			<file archivePath="script/browser">script/browser/マイクラスキン.exa</file>
+			<file
+				archivePath="script/browser/contents"
+			>script/browser/contents/マイクラスキン.abc</file>
+		</files>
+	</package>
+
+	<package>
+		<id>oov/CacheText</id>
+		<name>キャッシュテキスト</name>
+		<overview>テキストをキャッシュすることで描画処理を効率化する</overview>
+		<description
+		>キャッシュテキストは、生成したテキストを画像としてキャッシュすることで描画処理を効率化する拡張編集用スクリプトです。画像としてキャッシュするため、表示速度を利用したアニメーション、サイズのリアルタイムな変更などのような機能は使用できません。</description>
+		<developer>oov</developer>
+		<dependencies>
+			<dependency>oov/ZRamPreview|oov/PSDToolKit</dependency>
+		</dependencies>
+		<pageURL>https://www.nicovideo.jp/watch/sm37598954</pageURL>
+		<downloadURL>https://github.com/oov/aviutl_cachetext/releases</downloadURL>
+		<latestVersion>v0.8</latestVersion>
+		<files>
+			<file>キャッシュテキスト.exa</file>
+			<file archivePath="script">script/CacheText.lua</file>
+			<file archivePath="script">script/CacheText.anm</file>
+		</files>
+	</package>
+
+	<package>
+		<id>oov/GCMZDrops</id>
+		<name>ごちゃまぜドロップス</name>
+		<overview>ファイルをドラッグ＆ドロップで読み込み</overview>
+		<description
+		>ごちゃまぜドロップス（ GCMZDrops.auf ）は AviUtl の拡張編集ウィンドウへファイルやテキストをドラッグ＆ドロップした時の挙動を拡張するための AviUtl プラグインです。</description>
+		<developer>oov</developer>
+		<pageURL>https://www.nicovideo.jp/watch/sm33020019</pageURL>
+		<downloadURL
+		>https://github.com/oov/aviutl_gcmzdrops/releases/latest</downloadURL>
+		<latestVersion>v0.3.25</latestVersion>
+		<files>
+			<file directory="true">GCMZDrops</file>
+			<file>GCMZDrops.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>oov/bridge</id>
+		<name>bridge.dll</name>
+		<overview>Luaから外部プログラムを使った処理をしやすくする</overview>
+		<description
+		>拡張編集で Lua から外部プログラムを使って処理をしやすくするためのプラグインです。外部プログラムは stdin / stdout を使って通信するものを作成する必要があります。</description>
+		<developer>oov</developer>
+		<pageURL>https://github.com/oov/aviutl_bridge</pageURL>
+		<downloadURL>https://github.com/oov/aviutl_bridge/releases/latest</downloadURL>
+		<latestVersion>v0.14.0</latestVersion>
+		<files>
+			<file>bridge.dll</file>
+		</files>
+	</package>
+
+	<package>
+		<id>oov/loudness</id>
+		<name>loudness.auf</name>
+		<overview>Loudness値を測定</overview>
+		<description>ラウドネス値が表示できるプラグイン</description>
+		<developer>oov</developer>
+		<pageURL>https://www.nicovideo.jp/watch/sm34877728</pageURL>
+		<downloadURL
+		>https://drive.google.com/drive/folders/11QQmeQTapEZvHADf-8B5JPaGMb5yQ7Uz?usp=sharing</downloadURL>
+		<latestVersion>v0.1</latestVersion>
+		<files>
+			<file>plugins/loudness.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>oov/prima</id>
+		<name>PRIMA File Reader</name>
+		<overview>PRIMAファイルをAviUtlで読み込めるようにする</overview>
+		<description
+		>これは PSDTool(https://oov.github.com/psdtool/) でシンプルビューを元にして出力できる PRIMA (Pre-Rendered IMage Archive) ファイルを AviUtl で読み込めるようにする AviUtl 用入力プラグインです。</description>
+		<developer>oov</developer>
+		<pageURL>https://github.com/oov/aviutl_prima</pageURL>
+		<downloadURL>https://github.com/oov/aviutl_prima/releases/latest</downloadURL>
+		<latestVersion>v0.1</latestVersion>
+		<files>
+			<file>prima.aui</file>
+		</files>
+	</package>
+
+	<package>
+		<id>oov/PSDToolKit</id>
+		<name>PSDToolKit</name>
+		<overview>拡張編集プラグイン上でPSDファイルを扱えるようにする</overview>
+		<description
+		>PSDToolKit は AviUtl の拡張編集プラグイン上で PSD ファイルを扱えるようにするためのツールキットです。</description>
+		<developer>oov</developer>
+		<pageURL>https://www.nicovideo.jp/watch/sm32904901</pageURL>
+		<downloadURL>https://github.com/oov/aviutl_psdtoolkit/releases</downloadURL>
+		<latestVersion>v0.2beta56</latestVersion>
+		<files>
+			<file>PSDToolKit.auf</file>
+			<file>AudioMixer.auf</file>
+			<file>GCMZDrops.auf</file>
+			<file directory="true">GCMZDrops</file>
+			<file>ZRamPreview.auf</file>
+			<file>ZRamPreview.auo</file>
+			<file>ZRamPreview.exe</file>
+			<file>キャッシュテキスト.exa</file>
+			<file directory="true">かんしくん</file>
+			<file directory="true">PSDToolKit</file>
+			<file archivePath="script">script/Extram.dll</file>
+			<file archivePath="script">script/CacheText.anm</file>
+			<file archivePath="script">script/CacheText.lua</file>
+			<file archivePath="script">script/PSDToolKit.lua</file>
+			<file directory="true" archivePath="script">script/PSDToolKit</file>
+		</files>
+		<releases>
+			<release version="v0.2beta56">
+				<archiveIntegrity
+				>sha384-bBzTq2Mp+Vnp8ZDsgKCAmJ77yMas3kzP1RxzJr5kP/DqNl1tldVQaCEiTZiL4CW2</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="PSDToolKit.auf"
+					>sha384-4h/5otEATUVl6Gk6RXaKzJpAlIhYUy8zPnPC3tKsB3SyGuvKEvh6smKO8bRFeAr5</integrity>
+					<integrity
+						target="AudioMixer.auf"
+					>sha384-6Kv5N+1Bt9OPK+OLiBad9yooBN+RX9o3tF4t5inufr9WePoSjCcL1SSMAahkA34t</integrity>
+					<integrity
+						target="GCMZDrops.auf"
+					>sha384-yliKW077iF+UXevk5+1CDd+HkKeQWYTw2TxNNlWSTM/9AdyCx/VHc17lFxgE9Len</integrity>
+					<integrity
+						target="ZRamPreview.auf"
+					>sha384-JMuIrlKz0EYfr4DhOBD8IdpeR8LPLlDSnWCJEZ5TmCp1Si/eucxqODgxlgj9gjvD</integrity>
+					<integrity
+						target="ZRamPreview.auo"
+					>sha384-GZ0smPTeiasqYnd9jOFWYJaXh0Ddk4mm2xpboum9M0X/uUUEf3TXhm/Hr9rh+CSl</integrity>
+					<integrity
+						target="ZRamPreview.exe"
+					>sha384-+YG8xNcshj9Ya9xEf9AVcO/ANc8Wk1YilskVkFS5I4//TakLwBmLBwSYfgFmAiDj</integrity>
+					<integrity
+						target="キャッシュテキスト.exa"
+					>sha384-fC1iQK2BDPJ6zszrsGOJxeYww0YiW6JnqTmjn2Mw1mQb0vJBCbJjyTKxx11yYTb9</integrity>
+					<integrity
+						target="script/Extram.dll"
+					>sha384-k6Cc43ADV131Qy+vshk0pu7JSCbCMLt6XgiHzRLdEbwevq05rx7RBO49WG6R+9vU</integrity>
+					<integrity
+						target="script/CacheText.anm"
+					>sha384-6Z4jJlbf9XjV7dGtrZRPv1PzoGJvcH8y+T5BcoFpwct/FpUDJtL6T0VQvrkq3CkU</integrity>
+					<integrity
+						target="script/CacheText.lua"
+					>sha384-Q5seW/alhy+c/WJsWtn0nw2x3b7hr2wL5xSZ8JHgd9U+xphIgUVlDXopq8lVYAnZ</integrity>
+					<integrity
+						target="script/PSDToolKit.lua"
+					>sha384-b8HtzFRUqvsTTQHpvfmcG68UYcsw/72d3FL3oHVdNATKiazsxWQoZyFRYeQEXvpx</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>oov/RelMovieHandle</id>
+		<name>動画ハンドル開放</name>
+		<overview>動画ハンドルを開放します</overview>
+		<description
+		>AviUtl のメニューから 編集→動画ハンドル開放→動画ハンドルを開放 を選ぶと動画ハンドルが開放されます。このコマンドにはショートカットキー Ctrl + F5 が標準で割り当てられています。</description>
+		<developer>oov</developer>
+		<pageURL>https://github.com/oov/aviutl_relmoviehandle</pageURL>
+		<downloadURL
+		>https://github.com/oov/aviutl_relmoviehandle/releases/latest</downloadURL>
+		<latestVersion>v1.1</latestVersion>
+		<files>
+			<file>RelMovieHandle.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>oov/textassist</id>
+		<name>テキスト編集補助プラグイン</name>
+		<overview>拡張編集プラグイン上で制御文字の書き換えを行う</overview>
+		<description
+		>AviUtl の拡張編集プラグインで複数行テキストを編集する際に、Alt + 方向キー で制御文字の内容を書き換える AviUtl 用プラグインです。</description>
+		<developer>oov</developer>
+		<pageURL>https://github.com/oov/aviutl_textassist</pageURL>
+		<downloadURL
+		>https://github.com/oov/aviutl_textassist/releases/latest</downloadURL>
+		<latestVersion>v0.3.4</latestVersion>
+		<files>
+			<file>textassist.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>oov/ZRamPreview</id>
+		<name>拡張編集RAMプレビュー</name>
+		<overview>キャッシュしてコマ落ちを減らす</overview>
+		<description
+		>拡張編集のレンダリング結果をメモリにキャッシュすることで、プレビューのコマ落ちを軽減させるプラグインです。メモリがいっぱいあればいっぱい使えます。</description>
+		<developer>oov</developer>
+		<pageURL>https://www.nicovideo.jp/watch/sm32668490</pageURL>
+		<downloadURL>https://github.com/oov/aviutl_rampreview/releases</downloadURL>
+		<latestVersion>v0.3rc7</latestVersion>
+		<files>
+			<file>ZRamPreview.auf</file>
+			<file>ZRamPreview.auo</file>
+			<file>ZRamPreview.exe</file>
+			<file archivePath="script/">script/Extram.dll</file>
+		</files>
+	</package>
+
+	<!-- Respectrum93 ID:respectrum93 -->
+
+	<package>
+		<id>respectrum93/oldScripts</id>
+		<name>Respectrum93 Old Scripts</name>
+		<overview>Respectrum93氏の古いスクリプトをまとめたパッケージ</overview>
+		<description
+		>Respectrum93氏の古いスクリプトをまとめたパッケージです。@DelayMove.anmなどが同梱されています。</description>
+		<developer>Respectrum93</developer>
+		<pageURL
+		>https://www.dropbox.com/sh/u73uud29hcxlply/AABH9ZhzL1P1kX-bWrL4asdDa?preview=old_script_etc.zip</pageURL>
+		<downloadURL
+		>https://www.dropbox.com/sh/u73uud29hcxlply/AABH9ZhzL1P1kX-bWrL4asdDa?preview=old_script_etc.zip</downloadURL>
+		<latestVersion>2017/12/25</latestVersion>
+		<files>
+			<file>script/respectrum93_old/@DelayMove.anm</file>
+			<file>script/respectrum93_old/@effect-B.anm</file>
+			<file>script/respectrum93_old/@GetColor.anm</file>
+			<file>script/respectrum93_old/@GetColorTool.anm</file>
+			<file>script/respectrum93_old/@MultiSlicer.anm</file>
+			<file>script/respectrum93_old/@PlainEffector.anm</file>
+			<file>script/respectrum93_old/@Reflection_poly.anm</file>
+			<file>script/respectrum93_old/@Sphere.anm</file>
+			<file>script/respectrum93_old/@SpotLight.anm</file>
+			<file>script/respectrum93_old/@Stretch.anm</file>
+			<file>script/respectrum93_old/@TA-Easing.anm</file>
+			<file>script/respectrum93_old/@カメラ目標化.anm</file>
+			<file>script/respectrum93_old/@カメラ目標指定.cam</file>
+			<file>script/respectrum93_old/@ディスプレイスメントマップB.anm</file>
+			<file>script/respectrum93_old/@ディスプレイスメントマップB_old.anm</file>
+			<file>script/respectrum93_old/@座標plus.anm</file>
+			<file>script/respectrum93_old/@座標格納.anm</file>
+			<file>script/respectrum93_old/Audio_waveform_R.obj</file>
+			<file directory="true">script/respectrum93_old/aup_exo</file>
+			<file>script/respectrum93_old/Border.zip</file>
+			<file>script/respectrum93_old/CHAP_93.lua</file>
+			<file>script/respectrum93_old/Contour.anm</file>
+			<file>script/respectrum93_old/DisplacementPoly.anm</file>
+			<file>script/respectrum93_old/DOF2.lua</file>
+			<file>script/respectrum93_old/ObjectCopyEXT.obj</file>
+			<file>script/respectrum93_old/SimpleTube.obj</file>
+			<file>script/respectrum93_old/SimpleTube2.obj</file>
+			<file>script/respectrum93_old/SPfield.lua</file>
+			<file>script/respectrum93_old/SphericalField.anm</file>
+			<file>script/respectrum93_old/オートブラー+.anm</file>
+			<file>script/respectrum93_old/カスタムトラックバー.obj</file>
+			<file>script/respectrum93_old/パイシートグラフ.obj</file>
+			<file>script/respectrum93_old/ベジエ軌道Ｔ+.obj</file>
+			<file>script/respectrum93_old/レイヤー座標を合成.exa</file>
+			<file>script/respectrum93_old/個別座標再配置2.anm</file>
+			<file>script/respectrum93_old/偽被写界深度2.anm</file>
+			<file>script/respectrum93_old/偽被写界深度2c.anm</file>
+			<file>script/respectrum93_old/座標の取得.anm</file>
+			<file>script/respectrum93_old/簡易変形(oct).anm</file>
+			<file>script/respectrum93_old/背景色スポイト.anm</file>
+			<file>script/respectrum93_old/輪郭トレス.anm</file>
+			<file>script/respectrum93_old/音声玉.obj</file>
+			<file>script/respectrum93_old/＠＠スクリプトの使用方法＠＠.txt</file>
+			<file>script/respectrum93_old/@GetColor-V2_old.zip</file>
+		</files>
+		<releases>
+			<release version="2017/12/25">
+				<archiveIntegrity
+				>sha384-tQlS6JbeKz+/SuTf+70pUv5hU28b4hvCjHITlfdJjCKlXd+FFpgrYGzc2KGcn/6y</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="script/respectrum93_old/@DelayMove.anm"
+					>sha384-YwHbog6FXUQQ+DYNBBVeVAj2XRLajGDW9LTp8OZh1ttSQR7x67vAdVeWvyVlX21C</integrity>
+					<integrity
+						target="script/respectrum93_old/@effect-B.anm"
+					>sha384-9O7AA+rdlg6+nUAam+uPDWi/zCcJtiJYuIC67V7I84+RU4/zZK+rfrqxdXfjVmi9</integrity>
+					<integrity
+						target="script/respectrum93_old/@GetColor.anm"
+					>sha384-9NDXMNHxLWpaos3xb41JrNuhwld59nsPRAq7xvtunZ+NRJm2n7IVgQ6MYwYCKeNZ</integrity>
+					<integrity
+						target="script/respectrum93_old/@GetColorTool.anm"
+					>sha384-jS97KY8Fl+8r5KIfmjpBGrsGXGLJJbtY3WDd4lNG22aERl246aAWE32BejUxTHZg</integrity>
+					<integrity
+						target="script/respectrum93_old/@MultiSlicer.anm"
+					>sha384-kvNGUPzkL7iL9n9ypeuyrxcoPKT1YOgvjT6KMokaU004KgQf6S06k3GX+Vmllz+p</integrity>
+					<integrity
+						target="script/respectrum93_old/@PlainEffector.anm"
+					>sha384-MDANP0JxpUGqRqb5igDzYADIhe4Jf9hd4sYG5kdJbG8nxC4aqQdyPagLVKGobW2S</integrity>
+					<integrity
+						target="script/respectrum93_old/@Reflection_poly.anm"
+					>sha384-+2NuLZ5v4kCKNrq1pIysMXNbMqEHFv3D8nurX0EgKi06h33ArVITEIzMxjjcxT3e</integrity>
+					<integrity
+						target="script/respectrum93_old/@Sphere.anm"
+					>sha384-ZOoRdlhC1fTyW6pC3CBPMF3mb6DiDLVq8msnmBRTxZoJhCC5xPmUICBabtGKLQQ7</integrity>
+					<integrity
+						target="script/respectrum93_old/@SpotLight.anm"
+					>sha384-uvHtu6lZf6wRxVRQAsA2o/IWy1xrS2ZXoGro5roCFJEHENQk9L4V6wwbjG6ofxf5</integrity>
+					<integrity
+						target="script/respectrum93_old/@Stretch.anm"
+					>sha384-2r5zupnt4WNEBU2BdttO1gNixZvqrAfqfv12gp31YmFPRFNh3Pv1wI4E4QoG7zPW</integrity>
+					<integrity
+						target="script/respectrum93_old/@TA-Easing.anm"
+					>sha384-0J6gACIz9sXr/E+stvEtN5oC20CHU8ttowZzeyhx6tgK3iKHc9qxCVihwmGt7lpS</integrity>
+					<integrity
+						target="script/respectrum93_old/@カメラ目標化.anm"
+					>sha384-3O0ZxHqUj1VpbxYHth3h61cnTJLLRR8yrY7MYEH2DAVBM7UZKK5X9KdMMYm8Y8VM</integrity>
+					<integrity
+						target="script/respectrum93_old/@カメラ目標指定.cam"
+					>sha384-qFu4uDxdhqpreMVrp4G1+WLJ9mlwMpIT+PuKrrNKVx26Nk3Bh5UxdlTUEW0e2KNV</integrity>
+					<integrity
+						target="script/respectrum93_old/@ディスプレイスメントマップB.anm"
+					>sha384-YWtSsBmLqtEULTJIyUx8F4jO4/GpKwodgVMHxqZPAEsbsWwkopCiCvEkLM7gqzF2</integrity>
+					<integrity
+						target="script/respectrum93_old/@ディスプレイスメントマップB_old.anm"
+					>sha384-mOCUL1bpoRMr0DWrpPzqWtGtspfGxh5QspjMfDjtrU//X7H9vH55MK5Xg4cQNomB</integrity>
+					<integrity
+						target="script/respectrum93_old/@座標plus.anm"
+					>sha384-yAo+HwgSh7TV4qiZyMZ+qA0lXzGDzJDyGOplYLqxW/Ec5y9p4eDuP4wU/C1BzVpo</integrity>
+					<integrity
+						target="script/respectrum93_old/@座標格納.anm"
+					>sha384-nZvJ153hF7kNZhF6g+bRwlSSJsblZCcLKyAjt2nRDsEO1wDbifWypTVn505b9jac</integrity>
+					<integrity
+						target="script/respectrum93_old/Audio_waveform_R.obj"
+					>sha384-dANFktOoJbgIyKuAK5sdBByWCOWqYWiAjNy6SDtp1dUCQy8P6HhZNAS2PNY7lNHu</integrity>
+					<integrity
+						target="script/respectrum93_old/Border.zip"
+					>sha384-krNLzgi3hHTI3+ZTlfY1DvS3UwTCPtMBrOf0uggz7jau3gvqRiIS+svmeIkrmUsE</integrity>
+					<integrity
+						target="script/respectrum93_old/CHAP_93.lua"
+					>sha384-oUCudeL5jmFcduQEB4ep5WSIbrWHjil9PH4v+ixR3Ic9GNv4faeodKJDVlJEEcsL</integrity>
+					<integrity
+						target="script/respectrum93_old/Contour.anm"
+					>sha384-gei9nvriyGV68+I4uyfRZ9zo6VhhGaSTs57j1TdKO/BO0QlBNBCtFfKE9OFxrKS1</integrity>
+					<integrity
+						target="script/respectrum93_old/DisplacementPoly.anm"
+					>sha384-8G2ng6qzIjcMR1kMwVwfx/4Nw5jtX1kEwqB5JsIV2ScmOVjvpj9H4t4Yy9mIZ93t</integrity>
+					<integrity
+						target="script/respectrum93_old/DOF2.lua"
+					>sha384-uLX3vcz5bzQ05F8t4RetFwth50IlZy5JhZs7qiW1Z0/CytiTr3RwVWe5k1b85H4s</integrity>
+					<integrity
+						target="script/respectrum93_old/ObjectCopyEXT.obj"
+					>sha384-zZcctgKDwmIINmFKE08G7DhWPW0ZOQdNiwfe/BN9TYqJpAPIZ8PC5sQFI7TLxuM5</integrity>
+					<integrity
+						target="script/respectrum93_old/SimpleTube.obj"
+					>sha384-Sm2YqNHIjz4iPVLcE1urqiLs3XUTtJ6ItsemYLliz2Xgr1BK9y5FmS/KCDbhd9D9</integrity>
+					<integrity
+						target="script/respectrum93_old/SimpleTube2.obj"
+					>sha384-nbTbPd4CgEJ8ShJPNFOXNSSaIJn6Jv6LAwYxeFHpLM8hJPvF5D0zD4D/YaFM5chE</integrity>
+					<integrity
+						target="script/respectrum93_old/SPfield.lua"
+					>sha384-JmGagbQWTirmSTi+hjhTnkoA0maYRJf7zrat9FESFn9davE4naQ4tmi4r2dLsL+b</integrity>
+					<integrity
+						target="script/respectrum93_old/SphericalField.anm"
+					>sha384-cMGBvqwpse6aCwUQ3stpcMduiQpPNB0+oRb9mkJGMaj2a/D6wSFuTB/fAu847HD4</integrity>
+					<integrity
+						target="script/respectrum93_old/オートブラー+.anm"
+					>sha384-qsE54COeuMjS3PmSdDjrB3IgCXlujHcU0vO1ihk4bCvhD8KQu5freFyK9/F+hwyU</integrity>
+					<integrity
+						target="script/respectrum93_old/カスタムトラックバー.obj"
+					>sha384-dRoD8/+j6kyFoHSok+lrdlk0qmiK3zTWFNKWfA0H8EQEH+NWQ3XCQqxQntE+S60m</integrity>
+					<integrity
+						target="script/respectrum93_old/パイシートグラフ.obj"
+					>sha384-BRTu/xfWTB6drKQW0ICjFNC08Hb3FCiVXEVGvI1BJuVM1hpL7u+1HmEDEZ9n+LZa</integrity>
+					<integrity
+						target="script/respectrum93_old/ベジエ軌道Ｔ+.obj"
+					>sha384-HWMPvZOIMT5S1JL/yaDTv8owNNTZOmMndHngS3VyMVMThode8dIY9Lqt2MYQvNIL</integrity>
+					<integrity
+						target="script/respectrum93_old/レイヤー座標を合成.exa"
+					>sha384-X559jdRm/xR5Wff7WZ5MVDvNXnX3qtRmRXwLYjR2u1oaSRU3iPeIow9zsXeOhiDa</integrity>
+					<integrity
+						target="script/respectrum93_old/個別座標再配置2.anm"
+					>sha384-QO1ifxBlm99yRrSgJbUdIQxPKif+xkvlajg37+yOaXEWO1LIpI6wzNwiQ1wQhG4W</integrity>
+					<integrity
+						target="script/respectrum93_old/偽被写界深度2.anm"
+					>sha384-L2p25SJbxjhbiDb4TJSaPCORf7rwq6YdbNxmUs549imsY7sWOR0W8wGDiLK24Nsf</integrity>
+					<integrity
+						target="script/respectrum93_old/偽被写界深度2c.anm"
+					>sha384-ToAMmH9nBAep9vU+CGaxVHZvZiqg1swUGmzKWpOXXBevMUZxc9oko4KAAx+EvFtO</integrity>
+					<integrity
+						target="script/respectrum93_old/座標の取得.anm"
+					>sha384-VuEfgeAeo9ScyMm7Yii9Z3x2hAlgO1psVHXGiX1atoKaNGG3GV+l99oEGZ0IUJNT</integrity>
+					<integrity
+						target="script/respectrum93_old/簡易変形(oct).anm"
+					>sha384-VOPLNlsZG2JIO4H8oih/WOydAHYPMX1jiSuAnqLA55/M+xTcT0TXMG8XcN6QUk2S</integrity>
+					<integrity
+						target="script/respectrum93_old/背景色スポイト.anm"
+					>sha384-K4/jUTONnKUbkjNd/zDatsuWJ1USKL4QhaRlFVbDpSh4DOIv05rUV7ZMwxepcWdr</integrity>
+					<integrity
+						target="script/respectrum93_old/輪郭トレス.anm"
+					>sha384-4ZHYH/n3UNWkDrEBqiSeEtKlopaOKbNd0Re2Hp2DEslKYqT3r6fXBGEv7kL0WS9+</integrity>
+					<integrity
+						target="script/respectrum93_old/音声玉.obj"
+					>sha384-LEFsbRv34IL8C0Xhwjx+L+kXuC2iGUNEyycn4sRtww2Z+iTHxL14EsloYzPTuMnl</integrity>
+					<integrity
+						target="script/respectrum93_old/＠＠スクリプトの使用方法＠＠.txt"
+					>sha384-/ACMPDlBUDbAtN6OJKwfaKvu4OFO0nKDScongFQH17h0j9hmNiKHOsKfeCj6/DJ9</integrity>
+					<integrity
+						target="script/respectrum93_old/@GetColor-V2_old.zip"
+					>sha384-JF6lgGPQKk037zaAVf21/X0F6Ug+oMvPAN1uof5ahdmZa5VVjqgsGfwqb0da9FIk</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<!-- rigaya ID:rigaya -->
+
+	<package>
+		<id>rigaya/AviutlColor</id>
+		<name>AviutlColor</name>
+		<overview>Aviutlの色空間変換プラグインです</overview>
+		<description>Aviutlの色空間変換プラグインです。</description>
+		<developer>rigaya</developer>
+		<pageURL>https://rigaya34589.blog.fc2.com/blog-category-25.html</pageURL>
+		<downloadURL>https://1drv.ms/f/s!AsYziax1Q91rpA_zeixfUoylnZ9K</downloadURL>
+		<!--This URL requires permission.
+		<downloadMirrorURL
+		>https://drive.google.com/drive/folders/0BzA4dIFteM2dQjgwZkhtWUN6Zjg?usp=sharing</downloadMirrorURL>
+		-->
+		<latestVersion>0.02</latestVersion>
+		<files>
+			<file archivePath="AviutlColor_0.02">plugins/color_bt2020nc.auc</file>
+			<file archivePath="AviutlColor_0.02">plugins/color_bt601.auc</file>
+			<file archivePath="AviutlColor_0.02">plugins/color_bt709.auc</file>
+			<file archivePath="AviutlColor_0.02">plugins/AviutlColor.ini</file>
+		</files>
+	</package>
+
+	<package>
+		<id>rigaya/bandingMTSIMD</id>
+		<name>バンディング低減MT SIMD</name>
+		<overview>バンディング低減フィルタMTを高速化</overview>
+		<description
+		>がらくたハウスのがらくた置き場様(http://www.geocities.jp/flash3kyuu/)のバンディング低減フィルタMTを高速化したものです</description>
+		<developer>rigaya</developer>
+		<originalDeveloper>flash3kyuu</originalDeveloper>
+		<pageURL>https://rigaya34589.blog.fc2.com/blog-category-15.html</pageURL>
+		<downloadURL
+		>https://drive.google.com/folderview?id=0BzA4dIFteM2dQ1U3dG1mQ3Z5QWM&amp;usp=sharing</downloadURL>
+		<downloadMirrorURL
+		>https://1drv.ms/f/s!AsYziax1Q91rhEGimA7oABVfdmkE</downloadMirrorURL>
+		<latestVersion>v17+8</latestVersion>
+		<files>
+			<file archivePath="bandingMT_simd_v17+8">plugins/bandingMT_simd.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>rigaya/delogoSIMD</id>
+		<name>透過性ロゴ フィルタプラグイン SIMD版</name>
+		<overview>透過性ロゴ フィルタプラグインをSIMD化</overview>
+		<description
+		>MakKi様による透過性ロゴ フィルタプラグインver0.13をrigayaがSIMD化したものです。</description>
+		<developer>rigaya</developer>
+		<originalDeveloper>MakKi</originalDeveloper>
+		<pageURL>https://rigaya34589.blog.fc2.com/blog-category-20.html</pageURL>
+		<downloadURL>https://1drv.ms/f/s!AsYziax1Q91rlQoaLBz34MoNMe69</downloadURL>
+		<downloadMirrorURL
+		>https://drive.google.com/folderview?id=0BzA4dIFteM2dZEhId3NQaWZGbXc&amp;usp=sharing</downloadMirrorURL>
+		<latestVersion>r17</latestVersion>
+		<files>
+			<file archivePath="delogoSIMD_r17">plugins/delogo.auf</file>
+			<file archivePath="delogoSIMD_r17">plugins/logoscan.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>rigaya/ffmpegOut</id>
+		<name>ffmpeg/avconv出力</name>
+		<overview>ffmpeg.exeやavconv.exeを使用したエンコード</overview>
+		<description
+		>ffmpeg.exeやavconv.exeを使用してエンコードを行うAviutlの出力プラグインです。</description>
+		<developer>rigaya</developer>
+		<pageURL>https://github.com/rigaya/ffmpegOut#readme</pageURL>
+		<downloadURL>https://github.com/rigaya/ffmpegOut/releases/latest</downloadURL>
+		<latestVersion>1.01</latestVersion>
+		<files>
+			<file archivePath="plugins">plugins/ffmpegOut.auo</file>
+			<file archivePath="plugins">plugins/ffmpegOut.ini</file>
+			<file archivePath="plugins" installOnly="true">plugins/auo_setup.auf</file>
+			<file archivePath="plugins" directory="true">plugins/ffmpegOut_stg</file>
+			<file directory="true" installOnly="true">exe_files</file>
+		</files>
+		<releases>
+			<release version="0.10">
+				<archiveIntegrity
+				>sha384-pvAZnNFLcnZVAdC1kpydIpZtSq76Gr+M5qgnVONee+J5FpkDkXbxQUtTBTwQchWd</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="plugins/ffmpegOut.auo"
+					>sha384-wOUpuUYb6Rh0HPi3ycpFaNwKxCEgfoQYgg9z3fNZ1LdDrr9MVcg47T5B0iqQiui9</integrity>
+				</integrities>
+			</release>
+			<release version="1.00">
+				<archiveIntegrity
+				>sha384-7kfgxgORTvI+EA+HFlxPpGcC94yZKvLfHBHv8HDyBQ3zaLRhYKVSFSk2JoA++H2A</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="plugins/ffmpegOut.auo"
+					>sha384-xsm3y7kOYBJ7W9Uuv+gsIcEUaf+dtm2UKqyZ/h2YA5LBYzMVZlY25mqJBwfQFOGl</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>rigaya/NVEnc</id>
+		<name>NVEnc</name>
+		<overview>NVIDIAのNVEncを使用したエンコード</overview>
+		<description
+		>NVIDIAのNVEncを使用してエンコードを行うAviutlの出力プラグインです。NVEncによるハードウェア高速エンコードを目指します。</description>
+		<developer>rigaya</developer>
+		<pageURL>https://github.com/rigaya/NVEnc#readme</pageURL>
+		<downloadURL>https://github.com/rigaya/NVEnc/releases/latest</downloadURL>
+		<latestVersion>6.03</latestVersion>
+		<files>
+			<file archivePath="plugins">plugins/NVEnc.auo</file>
+			<file archivePath="plugins">plugins/NVEnc.ini</file>
+			<file archivePath="plugins" optional="true">plugins/NVEnc.conf</file>
+			<file archivePath="plugins" installOnly="true">plugins/auo_setup.auf</file>
+			<file archivePath="plugins" directory="true">plugins/NVEnc_stg</file>
+			<file directory="true" installOnly="true">exe_files</file>
+			<file directory="true" optional="true">exe_files/NVEncC</file>
+		</files>
+		<releases>
+			<release version="5.42">
+				<archiveIntegrity
+				>sha384-a9l8bRigK2w2OzlETnr3rD+t0Gsshtn4MbNi1L8VhctvrNc4cW12KVrYk9PhPAzI</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="plugins/NVEnc.auo"
+					>sha384-ACFEiDl87pYv1VGq2gvKtL3izDBFHvY878WtMJjsdtrLpCqoXYWbbaXXZGlnvqmz</integrity>
+				</integrities>
+			</release>
+			<release version="6.00">
+				<archiveIntegrity
+				>sha384-wST4X1zHU0nocsTJolZ5BkS87AogU4jsQuWpw1WjmcfVNWYngCg73WE2zjodznRH</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="plugins/NVEnc.auo"
+					>sha384-DCTCTINHSqic1Er/hwBdGjr+93W5kTK5VQl3ZexKLdtZLETRwDVh3KwNqefo2WNC</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>rigaya/QSVEnc</id>
+		<name>QSVEnc</name>
+		<overview>Intel Media SDKを使用したエンコード</overview>
+		<description
+		>Intel Media SDKを使用してエンコードを行うAviutlの出力プラグインです。QuickSyncVideoによるハードウェア高速エンコードを目指します。</description>
+		<developer>rigaya</developer>
+		<pageURL>https://github.com/rigaya/QSVEnc#readme</pageURL>
+		<downloadURL>https://github.com/rigaya/QSVEnc/releases/latest</downloadURL>
+		<latestVersion>7.01</latestVersion>
+		<files>
+			<file archivePath="plugins">plugins/QSVEnc.auo</file>
+			<file archivePath="plugins">plugins/QSVEnc.ini</file>
+			<file archivePath="plugins" optional="true">plugins/QSVEnc.conf</file>
+			<file archivePath="plugins" installOnly="true">plugins/auo_setup.auf</file>
+			<file archivePath="plugins" directory="true">plugins/QSVEnc_stg</file>
+			<file directory="true" installOnly="true">exe_files</file>
+			<file directory="true" optional="true">exe_files/QSVEncC</file>
+		</files>
+		<releases>
+			<release version="6.08">
+				<archiveIntegrity
+				>sha384-5FMrX54f6s1eThdjN80tLgyxjQPTGR7JMB/mbiBqOTMgID30hKF2RV4PWY6OAARz</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="plugins/QSVEnc.auo"
+					>sha384-0CPgLel6+2S9RQKc+KlDi8KletchmooZURxqvW10HMgaGaHtWcAQnlVJFvE0C492</integrity>
+				</integrities>
+			</release>
+			<release version="7.01">
+				<archiveIntegrity
+				>sha384-C9yVRBCKrJrXZMffnO0KmncUIsnIEQfGb9w3/pHHc17wGCMvfzYPcwbPwlT2AERR</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="plugins/QSVEnc.auo"
+					>sha384-caZN/aFwpQJW/jkNjlmIQLUEN+HXxQoxYziOiXeWyzaIIjCQz+145q5t9WXPaVSy</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>rigaya/afs</id>
+		<name>自動フィールドシフト 高速化版</name>
+		<overview>自動フィールドシフトの高速化版</overview>
+		<description
+		>aji氏作「自動フィールドシフト インタレース解除プラグイン」の高速化版</description>
+		<developer>rigaya</developer>
+		<originalDeveloper>aji</originalDeveloper>
+		<pageURL>https://rigaya34589.blog.fc2.com/blog-category-14.html</pageURL>
+		<downloadURL>https://1drv.ms/f/s!AsYziax1Q91rhBs2o7PMtyiEP8gC</downloadURL>
+		<downloadMirrorURL
+		>https://drive.google.com/folderview?id=0BzA4dIFteM2dSXduMXdPMXBjeFk&amp;usp=sharing</downloadMirrorURL>
+		<latestVersion>7.5a+22</latestVersion>
+		<files>
+			<file archivePath="afs_7.5a+22">afsvf.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>rigaya/edgelevelMT</id>
+		<name>エッジレベル調整MT</name>
+		<overview>エッジレベル調整をMT化(並列化)</overview>
+		<description
+		>がらくたハウスのがらくた置き場様(http://www.geocities.jp/flash3kyuu/)のエッジレベル調整を勝手にMT化(並列化)したものです。オリジナルと同様に動くはずです。</description>
+		<developer>rigaya</developer>
+		<originalDeveloper>flash3kyuu</originalDeveloper>
+		<pageURL>https://rigaya34589.blog.fc2.com/blog-category-11.html</pageURL>
+		<downloadURL
+		>https://1drv.ms/u/s!AsYziax1Q91rgjecLz36N1c41syz?e=7BeQTq</downloadURL>
+		<downloadMirrorURL
+		>https://drive.google.com/drive/folders/0BzA4dIFteM2dSEZZbmdOWDNuSHM?usp=sharing</downloadMirrorURL>
+		<latestVersion>v9</latestVersion>
+		<files>
+			<file archivePath="edgelevelMTv9">plugins/edgelevelMT.auf</file>
+		</files>
+	</package>
+
+	<package>
+		<id>rigaya/pmdMt</id>
+		<name>PMD_MT 高速化版</name>
+		<overview>PMD_MTの高速化版</overview>
+		<description
+		>PMD（2Dノイズ除去プラグイン）のマルチスレッド版PMD_MTを高速化したプラグインです。</description>
+		<developer>rigaya</developer>
+		<originalDeveloper>エモリ, スレ48≫989</originalDeveloper>
+		<pageURL>https://github.com/rigaya/pmd_mt#readme</pageURL>
+		<downloadURL>https://github.com/rigaya/pmd_mt/releases/latest</downloadURL>
+		<latestVersion>+7</latestVersion>
+		<files>
+			<file>plugins/pmd_mt.auf</file>
+		</files>
+		<releases>
+			<release version="+7">
+				<archiveIntegrity
+				>sha384-NUyICEn5FRm8uff1IgAL2IS6W8Q8hf72cykclDllCuEcrM+V8Nr1uvR7oQ8xfAmU</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="plugins/pmd_mt.auf"
+					>sha384-RsWp5Y2AEvBlc4sXbZurdJt22PS5GonAbz2bRWMnKYjG/xUhhdTM2cp7FtGglH33</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>rigaya/svtAV1guiEx</id>
+		<name>svtAV1guiEx</name>
+		<overview>SVT-AV1を使用してエンコードを行う</overview>
+		<description
+		>SVT-AV1を使用してエンコードを行うAviutlの出力プラグインです。</description>
+		<developer>rigaya</developer>
+		<pageURL>https://github.com/rigaya/svtAV1guiEx#readme</pageURL>
+		<downloadURL>https://github.com/rigaya/svtAV1guiEx/releases/latest</downloadURL>
+		<latestVersion>1.02</latestVersion>
+		<files>
+			<file archivePath="plugins">plugins/svtAV1guiEx.auo</file>
+			<file archivePath="plugins">plugins/svtAV1guiEx.ini</file>
+			<file archivePath="plugins" optional="true">plugins/svtAV1guiEx.conf</file>
+			<file archivePath="plugins" installOnly="true">plugins/auo_setup.auf</file>
+			<file archivePath="plugins" directory="true">plugins/svtAV1guiEx_stg</file>
+			<file directory="true" installOnly="true">exe_files</file>
+			<file optional="true">exe_files/SvtAv1EncApp_1.0.0-rc2-1_x64.exe</file>
+			<file optional="true">exe_files/ffmpeg_audenc.exe</file>
+			<file optional="true">exe_files/mp4box.exe</file>
+		</files>
+		<releases>
+			<release version="1.01">
+				<archiveIntegrity
+				>sha384-DrmlvGM0YCIDy4ZJQFtZ3nDO/VAiOIDeTcwODKuqVWAeUD/fo1re3QUFg5Xlqmxi</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="plugins/svtAV1guiEx.auo"
+					>sha384-casNq+32eoBF5T8dFCUKOU/1VyCNklxQVG4ZPpofav8NERFFVdJLpwiswL0WmFtw</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>rigaya/VCEEnc</id>
+		<name>VCEEnc</name>
+		<overview>AMDのVCEを使用してエンコードを行う</overview>
+		<description
+		>AMDのVCE(VideoCodecEngine)を使用してエンコードを行うAviutlの出力プラグインです。VCEによるハードウェア高速エンコードを目指します。</description>
+		<developer>rigaya</developer>
+		<pageURL>https://github.com/rigaya/VCEEnc#readme</pageURL>
+		<downloadURL>https://github.com/rigaya/VCEEnc/releases/latest</downloadURL>
+		<latestVersion>7.00</latestVersion>
+		<files>
+			<file archivePath="plugins">plugins/VCEEnc.auo</file>
+			<file archivePath="plugins">plugins/VCEEnc.ini</file>
+			<file archivePath="plugins" optional="true">plugins/VCEEnc.conf</file>
+			<file archivePath="plugins" installOnly="true">plugins/auo_setup.auf</file>
+			<file archivePath="plugins" directory="true">plugins/VCEEnc_stg</file>
+			<file directory="true" installOnly="true">exe_files</file>
+			<file directory="true" optional="true">exe_files/VCEEncC</file>
+		</files>
+		<releases>
+			<release version="6.17">
+				<archiveIntegrity
+				>sha384-eET4ztZyPR5OTD4XxNfZMB1NMnqCAtWMBvx1xH/rkZVLHKqy0FjhZq8CcFYussxs</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="plugins/VCEEnc.auo"
+					>sha384-Nw+jRqn07dpSir9+3SAcBqiGfe2jFL22TiivDPbQZ8ZJOiSOzXDy85JFs1GHlWTW</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>rigaya/x264guiEx</id>
+		<name>x264guiEx</name>
+		<overview>x264を使用したH264出力</overview>
+		<description
+		>拡張x264出力(GUI)Ex(x264guiEx)は、x264を使用してエンコードを行うAviutlの出力プラグインです。</description>
+		<developer>rigaya</developer>
+		<pageURL>https://github.com/rigaya/x264guiEx#readme</pageURL>
+		<downloadURL>https://github.com/rigaya/x264guiEx/releases/latest</downloadURL>
+		<latestVersion>3.11</latestVersion>
+		<files>
+			<file archivePath="plugins">plugins/x264guiEx.auo</file>
+			<file archivePath="plugins">plugins/x264guiEx.ini</file>
+			<file archivePath="plugins" optional="true">plugins/x264guiEx.conf</file>
+			<file archivePath="plugins" installOnly="true">plugins/auo_setup.auf</file>
+			<file archivePath="plugins" directory="true">plugins/x264guiEx_stg</file>
+			<file directory="true" installOnly="true">exe_files</file>
+			<file optional="true">exe_files/x264_3094_x64.exe</file>
+			<file optional="true">exe_files/x264_3094_x86.exe</file>
+		</files>
+		<releases>
+			<release version="2.68">
+				<archiveIntegrity
+				>sha384-4MABKkhryz3fmUUi+ufUIGueC5iZbQk3hod0gxYM0BxWdRDDqXsc5dd729BlLL7e</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="plugins/x264guiEx.auo"
+					>sha384-grUy4QgOBHxblkxgnkHGXiyYbLjJjMyXgny4jrGN81vCzX/Fdvuwe8C2np2nsZGQ</integrity>
+				</integrities>
+			</release>
+			<release version="3.05">
+				<archiveIntegrity
+				>sha384-bYoAdHLaf+q1m773ViDztm1dwGSA/xom6glR9fffy0oOOODyqCgYDcmyM7ufD6oF</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="plugins/x264guiEx.auo"
+					>sha384-SsxtQ5w05TZFi+d3Hz0DEM0bx5NQK9B94IcrOstg4bqBXRbzU3bBzdci6Ism2owx</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>rigaya/x265guiEx</id>
+		<name>x265guiEx</name>
+		<overview>x264/x265を使用したエンコード</overview>
+		<description
+		>拡張x265出力(GUI)Ex(x265guiEx)は、x265を使用してエンコードを行うAviutlの出力プラグインです。</description>
+		<developer>rigaya</developer>
+		<pageURL>https://github.com/rigaya/x265guiEx#readme</pageURL>
+		<downloadURL>https://github.com/rigaya/x265guiEx/releases/latest</downloadURL>
+		<latestVersion>4.01</latestVersion>
+		<files>
+			<file archivePath="plugins">plugins/x265guiEx.auo</file>
+			<file archivePath="plugins">plugins/x265guiEx.ini</file>
+			<file archivePath="plugins" optional="true">plugins/x265guiEx.conf</file>
+			<file archivePath="plugins" installOnly="true">plugins/auo_setup.auf</file>
+			<file archivePath="plugins" directory="true">plugins/x265guiEx_stg</file>
+			<file directory="true" installOnly="true">exe_files</file>
+			<file optional="true">exe_files/x265_3.5+35_x64.exe</file>
+			<file optional="true">exe_files/x265_3.5+35_x86.exe</file>
+		</files>
+		<releases>
+			<release version="3.102">
+				<archiveIntegrity
+				>sha384-nvZwsKJXWbrsc6eCoM98LFyTIx2gUrtzsi0X3AYTWEb5nrknHBkKTxWrXo4VuhRI</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="plugins/x265guiEx.auo"
+					>sha384-vHylrjLn+kqGKRpMS8k28RrvJ4LKFZrOanXdgpiB5xPIgq47V+GBbrKy9YJ+EPa9</integrity>
+				</integrities>
+			</release>
+			<release version="4.00">
+				<archiveIntegrity
+				>sha384-90hBDCSF2RAfMyPUk75kpuLvpd2obVU1ArUUxOkQuNSvIfu1ewXrP9btS+70XRtH</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="plugins/x265guiEx.auo"
+					>sha384-AucRj3yrJG7BQayf6xUaHF1J/COk4ceuegXUxXSxbfVx8BcXAL1JHrDAjaHw0USH</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<!-- rikky ID:rikky -->
+
+	<package>
+		<id>rikky/aulsPluginsByRikky</id>
+		<name>Aulsプラグインforaviutl110</name>
+		<overview>Auls氏プラグインの拡張編集0.93rc1対応版</overview>
+		<description
+		>Auls氏が公開しているプラグイン「ショートカット追加」「エイリアス一覧」「終了確認 」をaviutl1.10+exedit0.93rc1に対応させたものです。</description>
+		<developer>rikky</developer>
+		<originalDeveloper>yu_noimage_</originalDeveloper>
+		<dependencies>
+			<dependency>exedit0.93rc1</dependency>
+			<dependency>rikky/rikkyModule2</dependency>
+		</dependencies>
+		<pageURL>https://hazumurhythm.com/a/s1BS/</pageURL>
+		<downloadURL>https://hazumurhythm.com/a/s1BS/</downloadURL>
+		<latestVersion>ver 1.1</latestVersion>
+		<files>
+			<file
+				archivePath="auls_plugins_by_rikky"
+			>plugins/auls_plugins_by_rikky.auf</file>
+		</files>
+		<releases>
+			<release version="ver 1.1">
+				<integrities>
+					<integrity
+						target="plugins/auls_plugins_by_rikky.auf"
+					>sha384-lIgdU3YYovmPXDcLzYeR3gob5Rfc5U3NRq/cHbLILHhAXYy5Nb64pQy/6w9AaNE6</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>rikky/colorPalette1</id>
+		<name>カラーパレット(rm 1)</name>
+		<overview>色選択ダイアログのパレット情報を変更する</overview>
+		<description
+		>色選択ダイアログのパレット情報を変更ができるプラグイン</description>
+		<developer>rikky</developer>
+		<dependencies>
+			<dependency>rikky/rikkyModuleMemory</dependency>
+		</dependencies>
+		<pageURL>https://www.nicovideo.jp/watch/sm30290590</pageURL>
+		<downloadURL>https://hazumurhythm.com/a/Y3c/</downloadURL>
+		<latestVersion>v2.2</latestVersion>
+		<files>
+			<file archivePath="からぱれ" directory="true">color_palette_edit</file>
+			<file archivePath="からぱれ/aviutl1.00用">color_palette.auf</file>
+			<file archivePath="からぱれ">script/color_palette.obj</file>
+		</files>
+		<releases>
+			<release version="v2.2">
+				<integrities>
+					<integrity
+						target="color_palette.auf"
+					>sha384-4Kf9CKSUv0V68LUWKA++C+2r/mcKl+ruEzUgQ2Nwkf8eZuymCTDT6/y8wW/Wu4VE</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>rikky/colorPalette2</id>
+		<name>カラーパレット(rm 2)</name>
+		<overview>色選択ダイアログのパレット情報を変更する</overview>
+		<description
+		>色選択ダイアログのパレット情報を変更ができるプラグイン</description>
+		<developer>rikky</developer>
+		<dependencies>
+			<dependency>rikky/rikkyModule2</dependency>
+		</dependencies>
+		<pageURL>https://www.nicovideo.jp/watch/sm30290590</pageURL>
+		<downloadURL>https://hazumurhythm.com/a/Y3c/</downloadURL>
+		<latestVersion>v2.2a</latestVersion>
+		<files>
+			<file archivePath="からぱれ" directory="true">color_palette_edit</file>
+			<file archivePath="からぱれ/aviutl1.10用">color_palette.auf</file>
+			<file archivePath="からぱれ">script/color_palette.obj</file>
+		</files>
+		<releases>
+			<release version="v2.2a">
+				<integrities>
+					<integrity
+						target="color_palette.auf"
+					>sha384-r0yTfHgJO4451AtAzF4ZzdHTpguFpR4gOXkuijGvwpymR2tYud4g5mDRG12X/fKx</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>rikky/fanClipping</id>
+		<name>扇クリッピングR</name>
+		<overview>扇のようなクリッピングができるスクリプト</overview>
+		<description
+		>扇のようなクリッピングができるスクリプト。標準のカスタムオブジェクトの扇を拡張したようなものです。</description>
+		<developer>rikky</developer>
+		<pageURL>https://www.nicovideo.jp/watch/sm26625892</pageURL>
+		<downloadURL>https://hazumurhythm.com/a/3Os/</downloadURL>
+		<latestVersion>ver3</latestVersion>
+		<files>
+			<file>script/扇クリッピングR/fan_clipping.lua</file>
+			<file>script/扇クリッピングR/扇クリッピングR.anm</file>
+		</files>
+	</package>
+
+	<package>
+		<id>rikky/objectsound1</id>
+		<name>オブジェクトサウンド(rm 1)</name>
+		<overview
+		>オブジェクトやスクリプト制御で音声を追加するためのプラグイン</overview>
+		<description
+		>オブジェクトやスクリプト制御で音声を追加するためのプラグインです。</description>
+		<developer>rikky</developer>
+		<dependencies>
+			<dependency>rikky/rikkyModuleMemory</dependency>
+		</dependencies>
+		<pageURL>https://www.nicovideo.jp/watch/sm34781714</pageURL>
+		<downloadURL>https://hazumurhythm.com/a/0bS/</downloadURL>
+		<latestVersion>1.1</latestVersion>
+		<files>
+			<file
+				archivePath="オブジェクトサウンドv1,2/aviutl1.00用"
+			>plugins/objectsound.auf</file>
+		</files>
+		<releases>
+			<release version="1.1">
+				<integrities>
+					<integrity
+						target="plugins/objectsound.auf"
+					>sha384-eq3wqyyVpH8aVW9k/ES4fq4BeHX42UhETX2VhNnbP/yqqViVJ00dgSu7vy+S+UIc</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>rikky/pitch</id>
+		<name>ピッチ変更プラグイン</name>
+		<overview>音声のピッチを変更する</overview>
+		<description
+		>オーディオ関係のプラグイン。VSTを読み込めるプラグインが実はあって、これは要らない子になってしまいましたとさ。</description>
+		<developer>rikky</developer>
+		<pageURL>https://www.nicovideo.jp/watch/sm29432469</pageURL>
+		<downloadURL>https://hazumurhythm.com/a/qP6/</downloadURL>
+		<latestVersion>v01(補助), v02</latestVersion>
+		<files>
+			<file>pitch.auf</file>
+		</files>
+		<releases>
+			<release version="v01(補助), v02">
+				<integrities>
+					<integrity
+						target="pitch.auf"
+					>sha384-mfCffqrKd7bnKWCSOV20BohxYJlpr3Xf0qouyA4w7upsJ3bCQVc82Lkflo9ddvvr</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>rikky/relativePath1</id>
+		<name>相対パス保存(rikky_module 1)</name>
+		<overview>保存したとき画像のパスなどを相対パスで保存するプラグイン</overview>
+		<description
+		>保存したとき画像のパスなどを相対パスで保存するプラグイン。</description>
+		<developer>rikky</developer>
+		<dependencies>
+			<dependency>rikky/rikkyModuleMemory</dependency>
+		</dependencies>
+		<pageURL>https://www.nicovideo.jp/watch/sm31884370</pageURL>
+		<downloadURL>https://hazumurhythm.com/a/3Av/</downloadURL>
+		<latestVersion>v0.9b</latestVersion>
+		<files>
+			<file
+				archivePath="relative0.9e/rikky_module ver1用"
+			>plugins/relative_path.auf</file>
+		</files>
+		<releases>
+			<release version="v0.9b">
+				<integrities>
+					<integrity
+						target="plugins/relative_path.auf"
+					>sha384-CqpL1vL5ul1SsUvNXLASHSGe431dfVZlvxBJH+wjCJNVsmYfo5iC2BwfgFDCTDYJ</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>rikky/relativePath2</id>
+		<name>相対パス保存(rikky_module 2)</name>
+		<overview>保存したとき画像のパスなどを相対パスで保存するプラグイン</overview>
+		<description
+		>保存したとき画像のパスなどを相対パスで保存するプラグイン。</description>
+		<developer>rikky</developer>
+		<dependencies>
+			<dependency>rikky/rikkyModule2</dependency>
+		</dependencies>
+		<pageURL>https://www.nicovideo.jp/watch/sm31884370</pageURL>
+		<downloadURL>https://hazumurhythm.com/a/3Av/</downloadURL>
+		<latestVersion>v0.9a</latestVersion>
+		<files>
+			<file
+				archivePath="relative0.9e/rikky_module ver2用"
+			>plugins/relative_path.auf</file>
+		</files>
+		<releases>
+			<release version="v0.9a">
+				<integrities>
+					<integrity
+						target="plugins/relative_path.auf"
+					>sha384-TcmsW8q1/2EHtKQQnd6+0kVUYIyCuXxkQdvc+0ac9g2jP7IMOKnQXS9vBW4y6Etu</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>rikky/renamePlugin1</id>
+		<name>オブジェクト名変更(rm 1)</name>
+		<overview>タイムラインのオブジェクトの名称を変更するプラグイン</overview>
+		<description>タイムラインのオブジェクトの名称を変更するプラグイン</description>
+		<developer>rikky</developer>
+		<dependencies>
+			<dependency>rikky/rikkyModuleMemory</dependency>
+		</dependencies>
+		<pageURL>https://www.nicovideo.jp/watch/sm30290486</pageURL>
+		<downloadURL>https://hazumurhythm.com/a/G8o/</downloadURL>
+		<latestVersion>v0.9</latestVersion>
+		<files>
+			<file
+				archivePath="rename_plugin/rikky_module ver1用"
+			>plugins/rename_plugin.auf</file>
+		</files>
+		<releases>
+			<release version="v0.9">
+				<integrities>
+					<integrity
+						target="plugins/rename_plugin.auf"
+					>sha384-rxlEAP/aCBRWPApIawYYT9kD67WpZ4z/gj5HA3BDcwteFtQcJGp+3Fr7jwmNio8L</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>rikky/renamePlugin2</id>
+		<name>オブジェクト名変更(rm 2)</name>
+		<overview>タイムラインのオブジェクトの名称を変更するプラグイン</overview>
+		<description>タイムラインのオブジェクトの名称を変更するプラグイン</description>
+		<developer>rikky</developer>
+		<dependencies>
+			<dependency>rikky/rikkyModule2</dependency>
+		</dependencies>
+		<pageURL>https://www.nicovideo.jp/watch/sm30290486</pageURL>
+		<downloadURL>https://hazumurhythm.com/a/G8o/</downloadURL>
+		<latestVersion>0.9b</latestVersion>
+		<files>
+			<file
+				archivePath="rename_plugin/rikky_module ver2用"
+			>plugins/rename_plugin.auf</file>
+		</files>
+		<releases>
+			<release version="0.9b">
+				<integrities>
+					<integrity
+						target="plugins/rename_plugin.auf"
+					>sha384-qTblQcbdaGH50dD15umyI6Iz7AGGRs38bPeFKK3wYy5j1WjmWNFBctpvf4pZ1hpT</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>rikky/rikkeyframe1</id>
+		<name>キーフレームプラグイン(rm 1)</name>
+		<overview
+		>中間点でなくキーフレームでオブジェクトのパラメータを制御する</overview>
+		<description
+		>中間点ではなく独自のキーフレームでオブジェクトのパラメータを制御できるものです。</description>
+		<developer>rikky</developer>
+		<dependencies>
+			<dependency>rikky/rikkyModuleMemory</dependency>
+		</dependencies>
+		<pageURL>https://www.nicovideo.jp/watch/sm34389463</pageURL>
+		<downloadURL>https://hazumurhythm.com/a/tZl0/</downloadURL>
+		<latestVersion>1.0</latestVersion>
+		<files>
+			<file archivePath="rikkkkkkyframe_2" directory="true">KeyFrameEasing</file>
+			<file archivePath="rikkkkkkyframe_2" directory="true">KeyFrameScript</file>
+			<file archivePath="rikkkkkkyframe_2/rikky_module ver1用">rikkeyframe.auf</file>
+			<file archivePath="rikkkkkkyframe_2">script/rikkeyframe.tra</file>
+		</files>
+		<releases>
+			<release version="1.0">
+				<integrities>
+					<integrity
+						target="rikkeyframe.auf"
+					>sha384-GgsP4nKX8SH4B0LUtxH4go8xUT8AzuxV0JWZfb5nzfXugYKe5TDCI/UFN5J6N1jA</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>rikky/rikkeyframe2</id>
+		<name>キーフレームプラグイン(rm 2)</name>
+		<overview
+		>中間点でなくキーフレームでオブジェクトのパラメータを制御する</overview>
+		<description
+		>中間点ではなく独自のキーフレームでオブジェクトのパラメータを制御できるものです。</description>
+		<developer>rikky</developer>
+		<dependencies>
+			<dependency>rikky/rikkyModule2</dependency>
+		</dependencies>
+		<pageURL>https://www.nicovideo.jp/watch/sm34389463</pageURL>
+		<downloadURL>https://hazumurhythm.com/a/tZl0/</downloadURL>
+		<latestVersion>1.0a</latestVersion>
+		<files>
+			<file archivePath="rikkkkkkyframe_2" directory="true">KeyFrameEasing</file>
+			<file archivePath="rikkkkkkyframe_2" directory="true">KeyFrameScript</file>
+			<file archivePath="rikkkkkkyframe_2/rikky_module ver2用">rikkeyframe.auf</file>
+			<file archivePath="rikkkkkkyframe_2">script/rikkeyframe.tra</file>
+		</files>
+		<releases>
+			<release version="1.0a">
+				<integrities>
+					<integrity
+						target="rikkeyframe.auf"
+					>sha384-rzc1zTKYKrqRQmvZhIcklR/ptl4PNw/lHJTbJAfBjMqFUe7yOG8wywDDSQFJBzNR</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>rikky/rikkyModuleMemory</id>
+		<name>rikkymodule memory</name>
+		<overview>スクリプト製作の役に立つプラグイン</overview>
+		<description
+		>スクリプト製作に役に立つかもしれないDLL及びスクリプト及びそれらを使えるようにするプラグインです 2020/01/13現在対応しているAviUtlは1.10まで 対応している拡張編集は0.92まで</description>
+		<developer>rikky</developer>
+		<dependencies>
+			<dependency>exedit0.92</dependency>
+		</dependencies>
+		<pageURL>https://www.nicovideo.jp/watch/sm34776162</pageURL>
+		<downloadURL>https://hazumurhythm.com/a/a2Z/</downloadURL>
+		<latestVersion>1.4b</latestVersion>
+		<files>
+			<file archivePath="dll_v_12">rikky_module.dll</file>
+			<file archivePath="dll_v_12">rikky_memory.auf</file>
+		</files>
+		<releases>
+			<release version="1.4b">
+				<integrities>
+					<integrity
+						target="rikky_module.dll"
+					>sha384-alK8STLxUEklHYahTWI4aR5AnIqoeap6z0veuStJ9gKzY3JDQMKG4RGai8IMF6CZ</integrity>
+					<integrity
+						target="rikky_memory.auf"
+					>sha384-Fx0g0aXkoonki1Ql0057tsztntM1fFftxMfRR5hsoya/J1Ou4vEoPFihGQ231lsj</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>rikky/rikkyModule2</id>
+		<name>rikkymodule(version2)</name>
+		<overview>スクリプト製作の役に立つプラグイン</overview>
+		<description
+		>スクリプト製作に役に立つかもしれないプラグインです 20/01/11現在対応しているAviUtlは1.10のみ 対応している拡張編集は0.93rc1のみ</description>
+		<developer>rikky</developer>
+		<dependencies>
+			<dependency>exedit0.93rc1</dependency>
+		</dependencies>
+		<pageURL>https://hazumurhythm.com/a/q9Q/</pageURL>
+		<downloadURL>https://hazumurhythm.com/a/q9Q/</downloadURL>
+		<latestVersion>v2_0.1d</latestVersion>
+		<files>
+			<file archivePath="modulev2_0.1d">rikky_module.auf</file>
+		</files>
+		<releases>
+			<release version="v2_0.1d">
+				<integrities>
+					<integrity
+						target="rikky_module.auf"
+					>sha384-BMz0JmZND+d73mda5UiangRaPMYJPWV9cQJBfLTUgLowP9ZZnvEOZRapd0KlNPjv</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>rikky/roll</id>
+		<name>ロール巻取(ページめくり)</name>
+		<overview>画像を巻いたり、シールのように捲ったりするスクリプト</overview>
+		<description
+		>適応したときに画像が崩れる際は、ファイル→環境設定→システム設定の順でクリックしてください。最大画面サイズを大きくすると直ります。それでも崩れるときはもっと大きくしてください。</description>
+		<developer>rikky</developer>
+		<pageURL>https://www.nicovideo.jp/watch/sm27678925</pageURL>
+		<downloadURL>https://hazumurhythm.com/a/Y2n/</downloadURL>
+		<latestVersion>v4</latestVersion>
+		<files>
+			<file archivePath="rollv4">script/rollv4/ロール巻取(ページめくり).anm</file>
+			<file archivePath="rollv4">script/rollv4/動画背景スクリプト.exo</file>
+		</files>
+	</package>
+
+	<package>
+		<id>rikky/scriptSort1</id>
+		<name>スクリプト並べ替え管理(rm 1)</name>
+		<overview>アニメーション効果一覧の並び替えやフィルタのドロップ追加</overview>
+		<description
+		>アニメーション効果一覧を並び替えたりフィルタをドロップできるプラグインです。</description>
+		<developer>rikky</developer>
+		<dependencies>
+			<dependency>rikky/rikkyModuleMemory</dependency>
+		</dependencies>
+		<pageURL>https://www.nicovideo.jp/watch/sm30290540</pageURL>
+		<downloadURL>https://hazumurhythm.com/a/Di0/</downloadURL>
+		<latestVersion>v1.5</latestVersion>
+		<files>
+			<file
+				archivePath="スクリプトを並び替え2/rikky_module ver1用"
+			>script_sort.auf</file>
+		</files>
+		<releases>
+			<release version="v1.5">
+				<integrities>
+					<integrity
+						target="script_sort.auf"
+					>sha384-upOneFu04DzGrLWk6v7S4X+eMiQ73fRRCXpA2K9aJiHJ2rHqt1+Ve/vRQ2AS6ojx</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>rikky/scriptSort2</id>
+		<name>スクリプト並べ替え管理(rm 2)</name>
+		<overview>アニメーション効果一覧の並び替えやフィルタのドロップ追加</overview>
+		<description
+		>アニメーション効果一覧を並び替えたりフィルタをドロップできるプラグインです。</description>
+		<developer>rikky</developer>
+		<dependencies>
+			<dependency>rikky/rikkyModule2</dependency>
+		</dependencies>
+		<pageURL>https://www.nicovideo.jp/watch/sm30290540</pageURL>
+		<downloadURL>https://hazumurhythm.com/a/Di0/</downloadURL>
+		<latestVersion>v1.5a</latestVersion>
+		<files>
+			<file
+				archivePath="スクリプトを並び替え2/rikky_module ver2用"
+			>script_sort.auf</file>
+		</files>
+		<releases>
+			<release version="v1.5a">
+				<integrities>
+					<integrity
+						target="script_sort.auf"
+					>sha384-y7kwRwjCt9It4CVstK6cP1SOmKkWJ2k+olGl9S2gkhoOw6TTnxY7y7TKoyvg+aSS</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>rikky/separate1</id>
+		<name>パーツ分割（rikky_module 1）</name>
+		<overview>文字などをパーツごとに分割するスクリプト</overview>
+		<description
+		>分割したいイメージにパーツ分割のアニメーション効果を付けるだけです。分割された一部が表示されます。順番の数値を変えれば、分割される部分も変わります。</description>
+		<developer>rikky</developer>
+		<dependencies>
+			<dependency>rikky/rikkyModuleMemory</dependency>
+		</dependencies>
+		<pageURL>https://www.nicovideo.jp/watch/sm34776228</pageURL>
+		<downloadURL>https://hazumurhythm.com/a/pA2/</downloadURL>
+		<latestVersion>5</latestVersion>
+		<files>
+			<file
+				archivePath="パーツ分割5"
+			>script/パーツ分割/パーツ分割(ライト版).anm</file>
+			<file
+				archivePath="パーツ分割5/rikky_module ver1用"
+			>script/パーツ分割/rikky_separate.dll</file>
+		</files>
+	</package>
+
+	<package>
+		<id>rikky/separate2</id>
+		<name>パーツ分割（rikky_module 2）</name>
+		<overview>文字などをパーツごとに分割するスクリプト</overview>
+		<description
+		>分割したいイメージにパーツ分割のアニメーション効果を付けるだけです。分割された一部が表示されます。順番の数値を変えれば、分割される部分も変わります。</description>
+		<developer>rikky</developer>
+		<dependencies>
+			<dependency>rikky/rikkyModule2</dependency>
+		</dependencies>
+		<pageURL>https://www.nicovideo.jp/watch/sm34776228</pageURL>
+		<downloadURL>https://hazumurhythm.com/a/pA2/</downloadURL>
+		<latestVersion>5</latestVersion>
+		<files>
+			<file
+				archivePath="パーツ分割5"
+			>script/パーツ分割/パーツ分割(ライト版).anm</file>
+			<file
+				archivePath="パーツ分割5/rikky_module ver2用"
+			>script/パーツ分割/rikky_separate.dll</file>
+		</files>
+	</package>
+
+	<package>
+		<id>rikky/smallPlay</id>
+		<name>少し音確認再生</name>
+		<overview>数秒音声を流して音合わせをするプラグイン</overview>
+		<description
+		>再生位置前後の音を流すことで映像と音のずれを確認できます。</description>
+		<developer>rikky</developer>
+		<pageURL>https://www.nicovideo.jp/watch/sm30290443</pageURL>
+		<downloadURL>https://hazumurhythm.com/a/5Kf/</downloadURL>
+		<latestVersion>alpha.kai2.A</latestVersion>
+		<files>
+			<file archivePath="少し音再生">plugins/small_play.auf</file>
+		</files>
+		<releases>
+			<release version="alpha.kai2.A">
+				<integrities>
+					<integrity
+						target="plugins/small_play.auf"
+					>sha384-JRiUwelhzxHL0iRj9En4YzkhWdyKcXOM9bUWgwi9dAM6vFImtqhP0u8R70TDLClJ</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>rikky/tempMeasure</id>
+		<name>手動テンポ計測(メトロノーム)</name>
+		<overview>BPMを手動で計測するプラグイン</overview>
+		<description
+		>リズムよくクリックして、BPMを計測できるプラグイン。ついでにメトロノームにもなります。</description>
+		<developer>rikky</developer>
+		<pageURL>https://www.nicovideo.jp/watch/sm32113857</pageURL>
+		<downloadURL>https://hazumurhythm.com/a/Ow8/</downloadURL>
+		<latestVersion>v0.1</latestVersion>
+		<files>
+			<file archivePath="TempMeasure_alpha">pthreadGC2.dll</file>
+			<file archivePath="TempMeasure_alpha">temp_measure.auf</file>
+		</files>
+		<releases>
+			<release version="v0.1">
+				<integrities>
+					<integrity
+						target="temp_measure.auf"
+					>sha384-kKS3HFEnqivQx3TVpjVF2k/RaAwokPlx/BTf0xu2SsYZ+NW267+ls+6XIgvfc5dj</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<!-- UndoFish ID:UndoFish -->
+
+	<package>
+		<id>UndoFish/easingTra2020</id>
+		<name>トラックバー対応イージングスクリプト</name>
+		<overview>オブジェクトの動きに緩急をつける</overview>
+		<description
+		>オブジェクトに加速、減速、バウンドなどの動きをつけることができます。補間移動版では中間点を使った曲線上のイージングにも対応しています。</description>
+		<developer>UndoFish</developer>
+		<pageURL>https://www.nicovideo.jp/watch/sm37721332</pageURL>
+		<downloadURL>https://www.nicovideo.jp/watch/sm37721332</downloadURL>
+		<latestVersion>2020版</latestVersion>
+		<files>
+			<file>script/easing_tra_2020/@uf_easing.anm</file>
+			<file>script/easing_tra_2020/@uf_easing.tra</file>
+			<file>script/easing_tra_2020/easing.lua</file>
+			<file>script/easing_tra_2020/easing.png</file>
+			<file>script/easing_tra_2020/easing_aviutl2020.lua</file>
+			<file>script/easing_tra_2020/uf_easing.obj</file>
+		</files>
+	</package>
+
+	<!-- VFR-maniac ID:VFRmaniac -->
+
+	<package>
+		<id>VFRmaniac/LSMASHWorks</id>
+		<name>L-SMASH Works</name>
+		<overview>様々な形式の動画・音楽ファイルを読み込む</overview>
+		<description
+		>様々な形式の動画・音楽ファイルを読み込み可能にします。Mr-Ojii氏により毎日最新のffmpegを用いてビルドされています。</description>
+		<developer>VFRmaniac</developer>
+		<pageURL>https://github.com/VFR-maniac/L-SMASH-Works</pageURL>
+		<downloadURL
+		>https://github.com/Mr-Ojii/L-SMASH-Works-Auto-Builds/releases/latest</downloadURL>
+		<latestVersion continuous="true">最新</latestVersion>
+		<files>
+			<file>plugins/lwcolor.auc</file>
+			<file>plugins/lwdumper.auf</file>
+			<file>plugins/lwinput.aui</file>
+			<file>plugins/lwmuxer.auf</file>
+		</files>
+	</package>
+
+	<!-- yumetodo ID:yumetodo -->
+
+	<package>
+		<id>yumetodo/SigContrastFastAviUtl</id>
+		<name>SigContrastFastAviUtl</name>
+		<overview>シグモイド関数に基づくコントラスト調整</overview>
+		<description
+		>コントラスト/デコントラストをシグモイド関数に基づいて行うプラグイン。ImageMagick不使用。</description>
+		<developer>yumetodo</developer>
+		<dependencies>
+			<dependency
+			>MrOjii/LSMASHWorks|pop4bit/LSMASHWorks|VFRmaniac/LSMASHWorks|HolyWu/LSMASHWorks</dependency>
+		</dependencies>
+		<pageURL>https://github.com/yumetodo/SigContrastFastAviUtl</pageURL>
+		<downloadURL
+		>https://github.com/yumetodo/SigContrastFastAviUtl/releases/latest</downloadURL>
+		<latestVersion>1.0.0</latestVersion>
+		<files>
+			<file archivePath="SigColorFastAviUtl/">SigColorFastAviUtl.auf</file>
+		</files>
+	</package>
+
+	<!-- さつき ID:satsuki -->
+
+	<package>
+		<id>satsuki/satsuki</id>
+		<name>AviUtlスクリプト一式</name>
+		<overview>AviUtlを使うなら必須のスクリプト</overview>
+		<description
+		>画像の配置や色やさまざまなエフェクトに関するアニメーション効果、なめらかな加減速が可能なフィルタ効果、連番画像の配置、音声に同期したアニメーション、テキストに対するアニメーション効果、ノイズや模様や図形のカスタムオブジェクトなどのたくさんのスクリプトが含まれています。</description>
+		<developer>さつき</developer>
+		<pageURL>https://dic.nicovideo.jp/u/2787743#script</pageURL>
+		<downloadURL>https://bowlroll.net/file/3777</downloadURL>
+		<latestVersion>20160828</latestVersion>
+		<files>
+			<file archivePath="script_20160828/">script/さつき/@ANM1.anm</file>
+			<file archivePath="script_20160828/">script/さつき/@ANM2.anm</file>
+			<file archivePath="script_20160828/">script/さつき/@FIGURE.obj</file>
+			<file archivePath="script_20160828/">script/さつき/@LOAD.obj</file>
+			<file archivePath="script_20160828/">script/さつき/@TA.anm</file>
+			<file archivePath="script_20160828/">script/さつき/@音声.anm</file>
+			<file archivePath="script_20160828/">script/さつき/@加減速.anm</file>
+			<file archivePath="script_20160828/">script/さつき/@連番.anm</file>
+			<file archivePath="script_20160828/" directory="true">script/ANM_ssd/</file>
+			<file archivePath="script_20160828/" directory="true">script/TA_ssd/</file>
+		</files>
+	</package>
+
+	<!-- しし/りっちゃん ID:AiosCiao -->
+
+	<package>
+		<id>AiosCiao/VSThost4aviutl</id>
+		<name>VSTホストプラグイン＋α</name>
+		<overview
+		>aviutlで音声フィルタとしてVSTオーディオエフェクトがかけられる</overview>
+		<description
+		>aviutlでVSTオーディオエフェクトプラグインを音声フィルタとして配置できるようにするためのプラグインです。１つのaufファイルにつき１DLLのみマウントできます。複数使いたい場合は、重ね掛け用のプラグインを間にはさんで使用してください。</description>
+		<developer>しし/りっちゃん</developer>
+		<pageURL>https://www.nicovideo.jp/watch/sm29926034</pageURL>
+		<downloadURL>https://github.com/Aios-Ciao/VSThost4aviutl</downloadURL>
+		<latestVersion>ver.001</latestVersion>
+		<files>
+			<file archivePath="VSThost4aviutl/">plugins/vsthost_1.auf</file>
+			<file archivePath="VSThost4aviutl/">plugins/vsthost_2.auf</file>
+			<file archivePath="VSThost4aviutl/">plugins/vsthost_3.auf</file>
+			<file archivePath="VSThost4aviutl/">plugins/vsthost_4.auf</file>
+			<file archivePath="VSThost4aviutl/">plugins/wavpatch.auf</file>
+		</files>
+	</package>
+
+	<!-- ぽっぷん ID:pop4bit -->
+
+	<package>
+		<id>pop4bit/LSMASHWorks</id>
+		<name>L-SMASH Works</name>
+		<overview>様々な形式の動画・音楽ファイルを読み込む</overview>
+		<description
+		>様々な形式の動画・音楽ファイルを読み込み可能にします。VFR-maniac氏が L-SMASH Works 開発の一環として実装を進めている OSS のぽっぷん氏ビルドです。ffmpegのバージョン4.2.2を使用しています。海外からはダウンロードできません。</description>
+		<developer>ぽっぷん</developer>
+		<originalDeveloper>VFR-maniac</originalDeveloper>
+		<pageURL>https://pop.4-bit.jp/?page_id=7929</pageURL>
+		<downloadURL>https://pop.4-bit.jp/?page_id=7929</downloadURL>
+		<latestVersion>r940 release1</latestVersion>
+		<files>
+			<file>plugins/lwcolor.auc</file>
+			<file>plugins/lwdumper.auf</file>
+			<file>plugins/lwinput.aui</file>
+			<file>plugins/lwmuxer.auf</file>
+		</files>
+		<releases>
+			<release version="r940 release1">
+				<archiveIntegrity
+				>sha384-yBDA/RFCozGCQc6tcPa+Vsm4B0J82skJXN4ZrVRegCgQFTJW8N8eLlWXy55LiFRX</archiveIntegrity>
+				<integrities>
+					<integrity
+						target="plugins/lwinput.aui"
+					>sha384-11Bixku/iJUz6SgrABVClbVYcP4yM1D14eS52/HwQA60yYI1UMAoabnjLsIo+o3J</integrity>
+				</integrities>
+			</release>
+			<release version="r940 mod1">
+				<integrities>
+					<integrity
+						target="plugins/lwinput.aui"
+					>sha384-G+do1l9i5JW6y18m/C/OzPnKEq667EWIk/PenITnH3ymEYQf+H9lfHlkDhtJHv5C</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<!-- 鈴音 ID:suzune-->
+
+	<package>
+		<id>suzune/bakusoku</id>
+		<name>bakusoku.auf</name>
+		<overview>AviUtlを爆速化するプラグイン</overview>
+		<description>ウィンドウの描画処理を変更して、動作を軽くします。</description>
+		<developer>鈴音</developer>
+		<pageURL>https://www.nicovideo.jp/watch/sm39679253</pageURL>
+		<downloadURL
+		>https://github.com/suzune25254649/bakusoku_aviutl_plugin/releases/latest</downloadURL>
+		<latestVersion>v1.06</latestVersion>
+		<files>
+			<file archivePath="bakusoku_aviutl_plugin-1.06/">plugins/bakusoku.auf</file>
+		</files>
+		<releases>
+			<release version="v1.06">
+				<integrities>
+					<integrity
+						target="plugins/bakusoku.auf"
+					>sha384-R88BgBkWqGyNV7k17Rs1pdSExz5BvYpAjezWiQLL3xalz4LabnEKcZhBx2pSt7EB</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<package>
+		<id>suzune/WideDialog</id>
+		<name>WideDialog.auf</name>
+		<overview>AviUtlの設定ダイアログを幅広にする</overview>
+		<description>AviUtlの設定ダイアログの幅を広くします。</description>
+		<developer>鈴音</developer>
+		<pageURL>https://www.nicovideo.jp/watch/sm39708120</pageURL>
+		<downloadURL
+		>https://github.com/suzune25254649/WideDialog_aviutl_plugin/releases/latest</downloadURL>
+		<latestVersion>v1.03</latestVersion>
+		<files>
+			<file archivePath="WideDialog_aviutl_plugin-1.02/">plugins/WideDialog.auf</file>
+		</files>
+		<releases>
+			<release version="v1.02">
+				<integrities>
+					<integrity
+						target="plugins/WideDialog.auf"
+					>sha384-esDTZQT6MIC5ZUDz9kqohy1VAfi0XgQrOhC8Yk0KYLs04/jXZOgTtCRcPp0Eu2N6</integrity>
+				</integrities>
+			</release>
+		</releases>
+	</package>
+
+	<!-- W.Dee ID:WDee-->
+
+	<package>
+		<id>WDee/translib2</id>
+		<name>吉里吉里２トランジションライブラリ</name>
+		<overview>トランジション素材として使用できるPNG画像</overview>
+		<description
+		>トランジション素材として使用できるPNG画像です。シーンチェンジやワイプに対して指定できます。</description>
+		<developer>W.Dee</developer>
+		<pageURL>https://krkrz.github.io/</pageURL>
+		<downloadURL>https://krkrz.github.io/#krkr2</downloadURL>
+		<latestVersion>2003/05/03</latestVersion>
+		<files>
+			<file>transition/こすり(左から右へ).png</file>
+			<file
+			>transition/どう言ったらいいか分からないけどちょっと違う横ブラインド(左から右へ).png</file>
+			<file>transition/ひし形(左から右へ).png</file>
+			<file>transition/ひし形(左上から右下へ).png</file>
+			<file>transition/やや細かい横ブラインド(上から下へ).png</file>
+			<file>transition/やや細かい横ブラインド(短い軌跡で上から下へ).png</file>
+			<file>transition/やや細かい縦ブラインド(中央から左右へ).png</file>
+			<file>transition/やや細かい縦ブラインド(左から右へ).png</file>
+			<file>transition/やや細かい縦ブラインド(短い軌跡で左から右へ).png</file>
+			<file>transition/チェッカー.png</file>
+			<file>transition/モザイク.png</file>
+			<file>transition/ランダム.png</file>
+			<file>transition/上から下へ.png</file>
+			<file>transition/下から上へ.png</file>
+			<file>transition/円形(中から外へ).png</file>
+			<file>transition/円形(外から中へ).png</file>
+			<file>transition/右から左へ.png</file>
+			<file>transition/右渦巻き.png</file>
+			<file>transition/左から右へ.png</file>
+			<file>transition/左下から右上へ.png</file>
+			<file>transition/左回り.png</file>
+			<file>transition/左回りの連続.png</file>
+			<file>transition/放射状(時計回り).png</file>
+			<file>transition/斜めチェッカー.png</file>
+			<file>transition/斜めブラインド(左上から右下へ).png</file>
+			<file>transition/横ブラインド(上から下へ).png</file>
+			<file>transition/横ブラインド.png</file>
+			<file>transition/波.png</file>
+			<file>transition/爆発.png</file>
+			<file>transition/細かいひし形(左から右へ).png</file>
+			<file>transition/細かいひし形(左上から右下へ).png</file>
+			<file>transition/細かい横ブラインド(上から下へ).png</file>
+			<file>transition/細かい横ブラインド(短い軌跡で上から下へ).png</file>
+			<file>transition/細かい縦ブラインド(左から右へ).png</file>
+			<file>transition/細かい縦ブラインド(短い軌跡で左から右へ).png</file>
+			<file>transition/縦ブラインド(左から右へ).png</file>
+			<file>transition/縦ブラインド.png</file>
+			<file>transition/虫食い.png</file>
+		</files>
+	</package>
+</packages>

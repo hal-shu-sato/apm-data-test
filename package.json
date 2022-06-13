@@ -1,0 +1,60 @@
+{
+  "name": "apm-data",
+  "version": "1.0.0",
+  "repository": "https://github.com/hal-shu-sato/apm-data.git",
+  "author": "ato lash <hal-shu-sato@users.noreply.github.com>",
+  "license": "CC BY-NC-SA 4.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "run-s lint:prettier lint:eslint lint:jsonschema",
+    "lint:prettier": "prettier --check .",
+    "lint:eslint": "eslint --fix-dry-run .",
+    "lint:jsonschema": "ajv -s node_modules/apm-schema/v3/schema/core.json -d v3/core.json && ajv -s node_modules/apm-schema/v3/schema/packages.json -d v3/packages.json && ajv -s node_modules/apm-schema/v3/schema/scripts.json -d v3/scripts.json && ajv -c ajv-formats -s node_modules/apm-schema/v3/schema/list.json  -d v3/list.json && ajv -s node_modules/apm-schema/v3/schema/convert.json  -d v3/convert.json",
+    "fix": "run-s fix:prettier fix:eslint",
+    "fix:prettier": "prettier --write .",
+    "fix:eslint": "eslint --fix .",
+    "prepare": "husky install",
+    "check-convert": "node util/check-convert.js",
+    "check-update": "node util/check-update.js",
+    "mod-core": "node util/update-mod.js --core",
+    "mod-packages": "node util/update-mod.js --packages",
+    "mod-convert": "node util/update-mod.js --convert",
+    "mod-scripts": "node util/update-mod.js --scripts",
+    "sri": "node util/sri.js",
+    "convert-2-3": "run-p convert-2-3:*",
+    "convert-2-3:core": "node util/convert-2-3.js --core",
+    "convert-2-3:packages": "node util/convert-2-3.js --packages",
+    "convert-2-3:mod": "node util/convert-2-3.js --mod"
+  },
+  "devDependencies": {
+    "7zip-bin": "^5.2.0",
+    "@octokit/rest": "^18.12.0",
+    "@prettier/plugin-xml": "^2.2.0",
+    "ajv-cli": "^5.0.0",
+    "ajv-formats": "^2.1.1",
+    "apm-schema": "team-apm/apm-schema#v3.1.0",
+    "chalk": "^5.0.1",
+    "clipboardy": "^3.0.0",
+    "compare-versions": "^4.1.3",
+    "eslint": "^8.17.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "fast-xml-parser": "^4.0.8",
+    "fs-extra": "^10.1.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.1",
+    "node-7z": "^3.0.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.6.2",
+    "prettier-plugin-md-nocjsp": "^1.1.1",
+    "ssri": "^9.0.1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{json,html,css,md,xml,xsd}": "prettier --write"
+  }
+}
