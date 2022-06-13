@@ -22,11 +22,11 @@ jobs:
       - run: mr_ojii_file=`curl -s 'https://api.github.com/repos/Mr-Ojii/L-SMASH-Works-Auto-Builds/releases/latest' | jq -r '.assets[] | select(.name|test("Mr-Ojii_Mr-Ojii")).name'` && echo "mr_ojii_file=$mr_ojii_file" >> $GITHUB_ENV
       - run: sed -i "s/L-SMASH-Works_rev[0-9]*_Mr-Ojii_Mr-Ojii_AviUtl\.zip/${{ env.mr_ojii_file }}/g" v2/data/packages.xml
       - run: whoami
-      - run: ls -lha /home/runner/work/apm-data/apm-data/node_modules/7zip-bin
-      - run: ls -lha /home/runner/work/apm-data/apm-data/node_modules/7zip-bin/linux
-      - run: ls -lha /home/runner/work/apm-data/apm-data/node_modules/7zip-bin/linux/x64
-      - run: ls -lha /home/runner/work/apm-data/apm-data/node_modules/7zip-bin/linux/x64/7za
-      - run: sudo chown -R runner /home/runner/work/apm-data/apm-data/node_modules/7zip-bin
+      - run: ls -lha /home/runner/work/hal-shu-sato/apm-data-test/node_modules/7zip-bin
+      - run: ls -lha /home/runner/work/hal-shu-sato/apm-data-test/node_modules/7zip-bin/linux
+      - run: ls -lha /home/runner/work/hal-shu-sato/apm-data-test/node_modules/7zip-bin/linux/x64
+      - run: ls -lha /home/runner/work/hal-shu-sato/apm-data-test/node_modules/7zip-bin/linux/x64/7za
+      - run: sudo chown -R runner /home/runner/work/hal-shu-sato/apm-data-test/node_modules/7zip-bin
       - run: yarn run check-update
       - run: yarn run convert-2-3
       - name: Create Pull Request
