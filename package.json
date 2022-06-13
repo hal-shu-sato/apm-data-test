@@ -1,7 +1,7 @@
 {
-  "name": "apm-data",
+  "name": "apm-data-test",
   "version": "1.0.0",
-  "repository": "https://github.com/hal-shu-sato/apm-data.git",
+  "repository": "https://github.com/hal-shu-sato/apm-data-test.git",
   "author": "ato lash <hal-shu-sato@users.noreply.github.com>",
   "license": "CC BY-NC-SA 4.0",
   "private": true,
