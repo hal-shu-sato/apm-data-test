@@ -26,7 +26,7 @@ jobs:
       - run: ls -lha /home/runner/work/apm-data-test/apm-data-test/node_modules/7zip-bin/linux
       - run: ls -lha /home/runner/work/apm-data-test/apm-data-test/node_modules/7zip-bin/linux/x64
       - run: ls -lha /home/runner/work/apm-data-test/apm-data-test/node_modules/7zip-bin/linux/x64/7za
-      - run: sudo chown -R runner /home/runner/work/apm-data-test/apm-data-test/node_modules/7zip-bin
+      - run: sudo chmod -R u+x /home/runner/work/apm-data-test/apm-data-test/node_modules/7zip-bin
       - run: yarn run check-update
       - run: yarn run convert-2-3
       - name: Create Pull Request
