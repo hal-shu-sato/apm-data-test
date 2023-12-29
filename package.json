@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "7zip-bin": "^5.2.0",
-    "@octokit/rest": "^18.12.0",
+    "@octokit/rest": "^20.0.2",
     "@prettier/plugin-xml": "^2.2.0",
     "ajv-cli": "^5.0.0",
     "ajv-formats": "^2.1.1",
